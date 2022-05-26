@@ -1,2 +1,33 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './utils/variables';
+@import './utils/hidden';
+
+////////////////   HEADER & MENU ///////
+
+@import './components/header';
+@import './modals/menu';
+
+///////////////    HERO   //////////
+
+@import './components/hero';
+
+//////////////    SECTIONS /////////
+
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviewes';
+@import './components/contacts';
+
+///////////////    FOOTER  //////////
+
+@import './components/footer';
+
+////////////// MODALS ////////////
+
+@import './modals/buy-now-modal';
+@import './modals/read-more-modal';
+@import './modals/franchise-modal';
