@@ -1,0 +1,141 @@
+.contacts {
+  padding-bottom: 48px;
+  background-image: linear-gradient(
+    $bg-primary-color 22%,
+    $bg-secondary-color 22%
+  );
+}
+
+.contacts__item {
+  padding: 40px 32px;
+  border: 1px solid $pseudo-element-color;
+  background: $fifth-elements-bg-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__category {
+  display: inline-block;
+  background-color: $secondary-elements-bg-color;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+  padding: 0 24px;
+  margin-bottom: 20px;
+}
+
+.foodtruck {
+  background-color: $third-elements-bg-color;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__location {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $fifth-text-color;
+}
+
+.contacts__subscribe {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $pseudo-element-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $primary-text-color;
+}
+
+.contacts__day {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $fifth-text-color;
+}
+
+.contacts__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.92;
+  color: $fourth-text-color;
+
+  &:first-child {
+    margin-bottom: 8px;
+  }
+}
+.contacts__tel {
+  display: block;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid $pseudo-element-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $primary-text-color;
+}
+
+.contacts__email {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $primary-text-color;
+}
+
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 17px;
+  min-width: 161px;
+  margin: 0 auto;
+}
+
+.button__location {
+  color: $secondary-text-color;
+  background-color: $btn-bg-dark-color;
+  border: 1px solid $btn-bg-dark-color;
+  border-radius: 22px;
+  margin-bottom: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-dark-hover-color;
+  }
+}
+
+.button__franchise {
+  color: $third-text-color;
+  background-color: $btn-bg-light-color;
+  border: 1px solid $btn-bg-light-color;
+  border-radius: 22px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-light-hover-color;
+  }
+}
