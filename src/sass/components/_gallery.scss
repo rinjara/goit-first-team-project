@@ -1,0 +1,61 @@
+.gallery {
+    max-width: 364px;
+    height: 122px;
+    background-image: url('/src/images/ice-cream_gallery/home-pic5-mob1x.png');
+    margin: 0 auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('/src/images/ice-cream_gallery/home-pic5-mob2x.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution:288dpi),
+    (min-resolution: 3dppx) {
+        background-image: url('/src/images/ice-cream_gallery/home-pic5-mob3x.png');
+    }
+
+
+    @media screen and(min-width: 768px) {
+        max-width: 768px;
+        height: 264px;
+        background-image: url('/src/images/ice-cream_gallery/home-pic5-tab1x.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/src/images/ice-cream_gallery/home-pic5-tab2x.png');
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution:288dpi),
+    (min-resolution: 3dppx) {
+        background-image: url('/src/images/ice-cream_gallery/home-pic5-tab3x.png');
+    }
+
+    @media screen and(min-width: 1200px) {
+        background-image: url('/src/images/ice-cream_gallery/home-pic51-desktop1x.png');
+        max-width: 1280px;
+        height: 430px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('/src/images/ice-cream_gallery/home-pic51-desktop2x.png');
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution:288dpi),
+    (min-resolution: 3dppx) {
+        background-image: url('/src/images/ice-cream_gallery/home-pic51-desktop3x.png');
+    }
+
+
+}
