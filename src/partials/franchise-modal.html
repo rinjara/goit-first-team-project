@@ -1,0 +1,94 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn-close" data-modal-close>
+      <svg class="modal__icon-close" width="18" height="18">
+        <use href="images/symbol-defs.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">Request Franchise Information</h3>
+    <p class="modal__text">
+      Want to learn more about opening your own ICECREAM franchise?<br />
+      Fill out this form to get started:
+    </p>
+    <form class="form">
+      <div class="form__field">
+        <label class="form__title" for="username">First and last name</label>
+        <div class="form__wrap">
+          <input
+            class="form__input"
+            type="text"
+            id="username"
+            name="username"
+          /><svg class="form__icon" width="18" height="18">
+            <use href="images/symbol-defs.svg#icon-modal-username"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__title" for="phone">Phone</label>
+        <div class="form__wrap">
+          <input class="form__input" type="tel" id="phone" name="phone" /><svg
+            class="form__icon"
+            width="18"
+            height="18"
+          >
+            <use href="images/symbol-defs.svg#icon-modal-tel"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__title" for="email">Email</label>
+        <div class="form__wrap">
+          <input class="form__input" type="email" id="email" name="email" /><svg
+            class="form__icon"
+            width="18"
+            height="18"
+          >
+            <use href="images/symbol-defs.svg#icon-modal-email"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__title" for="interest">State&city of interest</label>
+        <div class="form__wrap">
+          <input
+            class="form__input"
+            type="text"
+            id="interest"
+            name="interest"
+          />
+        </div>
+      </div>
+      <div class="form__field">
+        <label class="form__title" for="comment">Tell us about yourself</label>
+        <textarea
+          class="form__textarea"
+          name="comment"
+          id="comment"
+          placeholder="Do you own other shops, your total net worth, your total liquid assets"
+        ></textarea>
+      </div>
+      <div class="checkbox form__checkbox">
+        <input
+          class="checkbox__input visually-hidden"
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+        />
+        <label class="checkbox__label checkbox" for="checkbox">
+          <span class="checkbox__agreement">
+            <svg class="checkbox__icon" width="16" height="15">
+              <use
+                href="images/symbol-defs.svg#icon-checkbox"
+              ></use></svg></span
+          >Agree with the&nbsp;<a href="" class="checkbox__link checkbox"
+            >privacy policy
+          </a></label
+        >
+      </div>
+      <button class="modal-franchise__btn button" type="submit">
+        Sent request &#62;
+      </button>
+    </form>
+  </div>
+</div>
