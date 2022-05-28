@@ -103,19 +103,16 @@
   color: $primary-text-color;
 }
 
-.button {
+.contacts__link-location {
   display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
   cursor: pointer;
-  padding: 16px 17px;
-  min-width: 161px;
+  padding: 16px 14px;
+  width: 161px;
   margin: 0 auto;
-}
-
-.button__location {
   color: $secondary-text-color;
   background-color: $btn-bg-dark-color;
   border: 1px solid $btn-bg-dark-color;
@@ -127,6 +124,18 @@
   &:focus {
     background-color: $btn-dark-hover-color;
   }
+}
+
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 17px;
+  min-width: 161px;
+  margin: 0 auto;
 }
 
 .button__franchise {
