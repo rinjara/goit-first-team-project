@@ -1,4 +1,5 @@
 .contacts {
+  padding-top: 40px;
   padding-bottom: 48px;
   background-image: linear-gradient(
     $bg-primary-color 22%,
@@ -29,7 +30,6 @@
   font-size: 12px;
   line-height: 1.33;
   text-align: center;
-  letter-spacing: 0.04em;
   color: $secondary-text-color;
   text-transform: uppercase;
   padding: 0 24px;
@@ -50,7 +50,6 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  letter-spacing: 0.04em;
   color: $fifth-text-color;
 }
 
