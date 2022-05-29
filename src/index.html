@@ -1,82 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>Page title</title>
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="./sass/index.scss"
-  />
-  <script
-    type="module"
-    src="./index.js"
-  ></script>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+      <link
     rel="stylesheet"
     type="text/css"
     href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
   />
- 
-  >
+     <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-</head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page title</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/menu.html"></include>
+    <include src="./partials/buy-now-modal.html"></include>
+    <!-- Hero -->
+    <include src="./partials/hero.html"></include>
+    <!-- Sections -->
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/read-more-modal.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviewes.html"></include>
+    <!-- Contacts & Modal -->
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
 
-<body>
-  <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-  <!-- Header -->
-  <include src="./partials/header.html"></include>
-  <include src="./partials/menu.html"></include>
-  <include src="./partials/buy-now-modal.html"></include>
-  <!-- Hero -->
-  <include src="./partials/hero.html"></include>
-  <!-- Sections -->
-  <include src="./partials/products.html"></include>
-  <include src="./partials/about.html"></include>
-  <include src="./partials/read-more-modal.html"></include>
-  <include src="./partials/advantages.html"></include>
-  <include src="./partials/gallery.html"></include>
-  <include src="./partials/customer-reviewes.html"></include>
-  <!-- Contacts & Modal -->
-  <include src="./partials/contacts.html"></include>
-  <include src="./partials/franchise-modal.html"></include>
-
-  <!-- Footer -->
-  <include src="./partials/footer.html"></include>
-  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- script -->
+     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/menu.js"></script>
-
-
-
-
-</body>
-
+    <script src="./js/modal.js"></script>
+    
+  </body>
 </html>
+
