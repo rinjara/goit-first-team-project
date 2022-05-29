@@ -10,19 +10,19 @@
     overflow-y: scroll;
     background-color: rgba(255, 165, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity $transition;
+   // transition: opacity $transition;
 
     @media screen and (max-width: 767px) {
         padding: 93px 15px 94px 15px;
     }
 
 
-    &.is--hidden {
+    &--hidden {
         opacity: 0;
         pointer-events: none;
     }
 
-    &.is--hidden .modal {
+    &--hidden .modal {
         transform: translate(-50%, -50%) scale(1.1);
     }
 }
@@ -58,7 +58,7 @@
     }
 }
 
-.modal__title {
+.modal__title.section-subtitle {
     position: relative;
     color: orange;
     font-size: 26px;
@@ -251,38 +251,6 @@
     }
 }
 
-.modal-close-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-bottom: 5px;
-
-    width: 30px;
-    height: 30px;
-    padding: 1px 6px;
-    border-color: transparent;
-    border-width: 2px;
-    border-radius: 50%;
-    background-color: white;
-    transition: background-color 250ms linear;
-
-    &:hover,
-    &:focus {
-        background-color: tomato;
-    }
-}
-
-.modal-close-btn__icon {
-    fill: navy;
-    transition: fill 250ms linear;
-
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
-        fill: white;
-    }
-}
-
 .modal__text {
     margin-bottom: 30px;
     font-weight: 700;
@@ -290,7 +258,7 @@
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-    color: black;
+    color: green;
 
     @media screen and(min-width:480px) {
         margin-bottom: 50px;
