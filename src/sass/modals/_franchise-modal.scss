@@ -37,10 +37,27 @@
     transition: transform 500ms $transition;
   }
 
+  @include tablet {
+    width: 550px;
+    min-height: 609px;
+    padding: 66px 30px 12px 30px;
+  }
+
   //   @include desktop {
   //     width: 528px;
   //     min-height: 581px;
   //   }
+}
+
+.modal__logo {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 175px;
+  }
 }
 
 .modal__btn-close {
@@ -90,23 +107,25 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 
-  //     @include tablet {
-  //       font-size: 20px;
-  //   color: $secondary-text-color;
-  //     }
+  @include tablet {
+    font-size: 25px;
+    color: $secondary-text-color;
+    margin-bottom: 8px;
+  }
 }
 
 .modal__text {
   display: none;
 
-  //    @include tablet {
-  //     font-weight: 500;
-  //   font-size: 12px;
-  //   line-height: 1.23;
-  //   margin-bottom: 6px;
-  //   text-align: center;
-  //   color: $third-text-color;
-  //    }
+  @include tablet {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.23;
+    margin-bottom: 13px;
+    text-align: center;
+    color: $third-text-color;
+  }
 }
 
 .form__field {
@@ -130,6 +149,10 @@
   letter-spacing: 0.01em;
   color: $secondary-text-color;
   margin-bottom: 4px;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 
 .form__wrap {
