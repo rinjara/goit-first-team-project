@@ -1,21 +1,25 @@
 .advantage {
     background-color: $bg-secondary-color;
-    padding-bottom: 80px;
-    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-// advantage__title {
-
-// }
+.advantage__container {
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        width: 100%;
+}
+}
 
 .advantage__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .advantage__item {
-  
   position: relative;
 
   &:not(:first-child) {
