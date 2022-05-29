@@ -1,3 +1,10 @@
+
+    (function($){
+       
+        $('.customer__list').slick();
+        
+    })(jQuery);
+
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
@@ -27,3 +34,6 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+b7030b2421158ff68c07e737e6027ab18ed6743
+

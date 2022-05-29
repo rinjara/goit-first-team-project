@@ -1,10 +1,15 @@
 .gallery-picture{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-  
+display: flex;
+ max-width: 100%;
+ align-items: center;
+ justify-content: center;
 
-        }
-.gallery-img{
-    display:block;
 }
+
+.gallery{
+    padding-top:40px; 
+padding-bottom: 40px;
+
+    background-image: linear-gradient($bg-secondary-color 44%,
+            $bg-primary-color 40%);
+    }

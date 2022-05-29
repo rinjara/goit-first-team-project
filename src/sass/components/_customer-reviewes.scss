@@ -1,0 +1,104 @@
+.customer {
+  margin-top: 80px;
+//   margin-bottom: 40px;
+}
+
+  .customer__dabl{
+    content: "\201E	";
+    position: absolute;
+    top: 59px;
+    left: 46px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    @media screen and (min-width: 480px) {
+        left: 60px;
+      }
+      @media screen and (min-width: 1200px) {
+        left: 43px;
+      }
+transform: rotate(-180deg);
+  }
+.customer__img {
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+.customer__reviewes {
+    position: relative;
+  background-color: $slader-bg-color;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  padding-top: 45px;
+  padding-bottom: 26px;
+  z-index: -1;
+}
+
+// .customer__gradient
+// // :not(:first-child)
+// {
+//   background-image: repeating-linear-gradient(
+//     180deg,
+//     transparent,
+//     transparent 30px,
+//     #333 31px
+//   );
+//   margin: 0 auto;
+//   padding-left: 50px;
+//   padding-right: 50px;
+
+//   width: 100%;
+//   height: 100%;
+
+  
+// }
+
+.customer__p {
+    text-indent: 18px;
+    
+  //  padding: 43px 58px 26px 65px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  color: $fifth-text-color;
+  z-index: 2;
+
+  
+  // display: inline;
+  // 	background-repeat: no-repeat;
+  // 	background-position: center bottom 1px;
+  // 	background-size: 100% 5px;
+  // 	background-image: linear-gradient(to top, #fff, #000);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 30px,
+    $pseudo-element-color 31px
+  );
+  margin: 0 50px;
+  // padding-left: 50px;
+  // padding-right: 50px;
+  // width: 80%;
+  // height: 100%;
+}
+.customer__bulet--item {
+  display: flex;
+  justify-content: center;
+  margin-top: 33px;
+}
+.customer__bulet--list {
+  border: 0.1875em solid $slader-icon-color;
+  border-radius: 50%;
+  // box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 4px;
+  width: 4px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.customer__h2{
+    text-align: center;
+    margin-top: 16px;
+}
