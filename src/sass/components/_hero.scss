@@ -1,410 +1,403 @@
 .hero {
-    background-color: #ffb8ca;
-    position: relative;
-    overflow-x: hidden;
+  background-color: #ffb8ca;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .hero__container {
-    padding-top: 193px;
-    padding-bottom: 160px;
-    position: relative;
-    overflow-x: visible;
-@media screen and (min-width: 768px) {
-        // .hero__container {
-            padding-top: 102px;
-            padding-bottom: 34px;
-            overflow: hidden;
-        }
-    
+  padding-top: 193px;
+  padding-bottom: 160px;
+  position: relative;
+  overflow-x: visible;
+  @media screen and (min-width: 768px) {
+    // .hero__container {
+    padding-top: 102px;
+    padding-bottom: 34px;
+    overflow: hidden;
+  }
 
-@media screen and (min-width: 1200px) {
-        // .hero__container {
-            padding-top: 175px;
-            padding-bottom: 55px;
-        }
-
+  @media screen and (min-width: 1200px) {
+    // .hero__container {
+    padding-top: 175px;
+    padding-bottom: 55px;
+  }
 }
 
-
 .hero__description-wraper {
-    width: 280px;
-    position: relative;
-    z-index: 2;
+  width: 280px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-family: Titan One, sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    color: #fff;
+  color: #fff;
 
-    @media screen and (min-width: 768px) {
-        font-size: 22px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__title {
-        margin-bottom: 25px;
-        font-size: 38px;
-        line-height: 1.16;
-    }
+  .hero__title {
+    margin-bottom: 25px;
+    font-size: 38px;
+    line-height: 1.16;
+  }
 }
 
 .hero__title span {
-    font-size: 48px;
-    line-height: 0.96;
-    color: $third-text-color;
-    @media screen and (min-width: 768px) {
-        font-size: 34px;
-        line-height: 0.9;
-    }
+  font-size: 48px;
+  line-height: 0.96;
+  color: $third-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.9;
+  }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
 }
 
-
 .hero__btns {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .hero__btn-item:not(:last-child) {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .hero__btn-link {
-    display: inline-flex;
-    padding: 8px 14px;
-    background-color: #fff;
+  display: inline-flex;
+  padding: 8px 14px;
+  background-color: #fff;
 
-    font-size: 8px;
-    line-height: 1.25;
-    color: $third-text-color;
-    border-radius: 20px;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $third-text-color;
+  border-radius: 20px;
 
-    transition: background-color $transition;
+  transition: background-color $transition;
 
-    &:hover,
-    &:focus {
-        background-color: $btn-light-hover-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $btn-light-hover-color;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .hero__btn-link {
-        padding: 9px 14px;
-    }
+  .hero__btn-link {
+    padding: 9px 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__btn-link {
-        padding: 14px 24px;
-        font-size: 14px;
-        line-height: 1.3;
-    }
+  .hero__btn-link {
+    padding: 14px 24px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
 }
 .hero__btn-link_accent {
+  background-color: $btn-bg-dark-color;
+  color: $btn-bg-light-color;
 
-    background-color: $third-text-color;
-    color: $secondary-text-color;
+  background-color: $third-text-color;
+  color: $secondary-text-color;
 
+  transition: background-color $transition;
 
-    transition: background-color $transition;
-
-    &:hover,
-    &:focus {
-        background-color: $slader-icon-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $slader-icon-color;
+  }
 }
 
 .hero__img-center {
-    position: absolute;
-        top: 113px;
-        bottom: 0;
-        right: 32px;
-    
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            top: 20px;
-        }
-    
-        @media screen and (min-width: 768px) {
-            width: 143px;
-            height: 336px;
-            right: 247px;
-            top: 65px;
-    
-            animation-name: appearance;
-            animation-duration: 3s;
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-            transition: $transition;
-    
-            &:hover,
-            &:focus {
-                transform: scale(1.1);
-            }
-        }
-    
-        @media screen and (min-width: 1200px) {
-            right: 450px;
-            top: 112px;
-            width: 236px;
-            height: 557px;
-        }
-    }
+  position: absolute;
+  top: 113px;
+  bottom: 0;
+  right: 32px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 143px;
+    height: 336px;
+    right: 247px;
+    top: 65px;
+
+    animation-name: appearance;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 450px;
+    top: 112px;
+    width: 236px;
+    height: 557px;
+  }
+}
 
 .hero__ellipse {
-    position: absolute;
-    top: 83px;
-    right: -55px;
+  position: absolute;
+  top: 83px;
+  right: -55px;
 
-    width: 346px;
-    height: 344px;
+  width: 346px;
+  height: 344px;
 
-    border-radius: 50%;
-    background-color: $hero-secondary-color;
+  border-radius: 50%;
+  background-color: $hero-secondary-color;
 
-    @media screen and (min-width: 768px) {
-        animation-name: scale;
-        animation-duration: 1.5s;
-        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  @media screen and (min-width: 768px) {
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .hero__ellipse {
-        width: 324px;
-        height: 322px;
-        top: 31px;
-        right: 137px;
-    }
+  .hero__ellipse {
+    width: 324px;
+    height: 322px;
+    top: 31px;
+    right: 137px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__ellipse {
-        width: 538px;
-        height: 538px;
-        top: 52px;
-        left: 485px;
-    }
+  .hero__ellipse {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    left: 485px;
+  }
 }
 
 .hero__img-left {
-    position: absolute;
-    bottom: 28px;
-    left: 34px;
-display: block;
-// width: 154px;
-// height: 152px;
-    // ----------анімацію.!?
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+  display: block;
+  // width: 154px;
+  // height: 152px;
+  // ----------анімацію.!?
 }
-.hero-left-wraper{
-    display: flex;
+.hero-left-wraper {
+  display: flex;
 }
-.btn-pointer{
-   display: inline-block;
-width: 18px;
-height: 18px;
-border-radius: 50%;
-border: none;
-@media screen and (min-width: 1200px) {
+.btn-pointer {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  @media screen and (min-width: 1200px) {
     width: 24px;
-        height: 24px;
+    height: 24px;
+  }
 }
-}
-.hero__btn-icon{
-    fill: #d41443;
+.hero__btn-icon {
+  fill: #d41443;
 }
 @media screen and (min-width: 1200px) {
-    .hero__img-left {
-        left: 16px;
-        bottom: 35px;
-    }
-
+  .hero__img-left {
+    left: 16px;
+    bottom: 35px;
+  }
 }
 .hero__img-right {
-    position: absolute;
-    bottom: 0;
-    right: 34px;
+  position: absolute;
+  bottom: 0;
+  right: 34px;
 
-    // ----------анімацію.!?
-    transition: $transition;
+  // ----------анімацію.!?
+  transition: $transition;
 
-    // &:hover,
-    // &:focus {
-    //     transform: scale(1.1);
-    // }
+  // &:hover,
+  // &:focus {
+  //     transform: scale(1.1);
+  // }
 }
 
 .hero__text {
-    margin-top: 50px;
-    margin-bottom: 7px;
-    font-size: 8px;
-    line-height: 1.5;
-    color: #fff;
+  margin-top: 50px;
+  margin-bottom: 7px;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #fff;
 
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.04em;
 
-    font-family: "DM Sans", sans-serif;
-    letter-spacing: .04em;
-
-    @media screen and (min-width: 768px) {
-        width: 120px;
-        // margin-left: 32px;
-        margin-bottom: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    // margin-left: 32px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__text {
-        width: 170px;
-        margin-bottom: 10px;
-        margin-top: 112px;
-        margin-left: 0;
+  .hero__text {
+    width: 170px;
+    margin-bottom: 10px;
+    margin-top: 112px;
+    margin-left: 0;
 
-        font-size: 11px;
-        line-height: 1.4;
-    }
+    font-size: 11px;
+    line-height: 1.4;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .hero__description-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+  .hero__description-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .hero__text-wrapper {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 200px;
-    }
+  .hero__text-wrapper {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__description-wrapper {
-        width: 349px;
-    }
+  .hero__description-wrapper {
+    width: 349px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__img-right {
-        right: 109px;
-    }
+  .hero__img-right {
+    right: 109px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .hero__text-wrapper {
-        display: none;
-    }
+  .hero__text-wrapper {
+    display: none;
+  }
 
-    .hero__stat-list {
-        display: none;
-    }
+  .hero__stat-list {
+    display: none;
+  }
 
-    .hero__img-left {
-        display: none;
-    }
+  .hero__img-left {
+    display: none;
+  }
 
-    .hero__img-right {
-        display: none;
-    }
+  .hero__img-right {
+    display: none;
+  }
 }
 .hero__stat-list {
-    position: absolute;
-    top: 96px;
-    right: 44px;
+  position: absolute;
+  top: 96px;
+  right: 44px;
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__stat-list {
-        top: 156px;
-        right: 115px;
-    }
+  .hero__stat-list {
+    top: 156px;
+    right: 115px;
+  }
 }
 .hero__stat-list-item {
-    position: relative;
+  position: relative;
 }
 
 .hero__stat-list-item:not(:last-child) {
-    margin-bottom: 13px;
+  margin-bottom: 13px;
 }
 
 .hero__stat-list-item::before {
-    position: absolute;
-    top: 0;
-    right: -10px;
-    content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #fff;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 0;
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__stat-list-item::before {
-        width: 30px;
-        height: 30px;
-    }
+  .hero__stat-list-item::before {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero__stat-list-accent-text {
-    font-family: Titan One, sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: right;
-    cursor: pointer;
-    color: #d41443;
-    position: relative;
-    z-index: 2;
+  font-family: Titan One, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  cursor: pointer;
+  color: #d41443;
+  position: relative;
+  z-index: 2;
 
-//     &:hover,
-//     &:focus {
-// // ---------------------------------АНІМАЦІЯ
-//     }
+  //     &:hover,
+  //     &:focus {
+  // // ---------------------------------АНІМАЦІЯ
+  //     }
 }
 
 .hero__stat-list-text {
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    color: #fff;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #fff;
 }
 
 @media screen and (min-width: 1200px) {
-    .hero__stat-list-accent-text {
-        font-size: 46px;
-    }
+  .hero__stat-list-accent-text {
+    font-size: 46px;
+  }
 
-    .hero__stat-list-text {
-        font-size: 14px;
-        line-height: 1.29;
-    }
+  .hero__stat-list-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
-
 @keyframes scale {
-    0% {
-        transform: scale(0.25);
-    }
+  0% {
+    transform: scale(0.25);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
