@@ -100,10 +100,11 @@
 }
 
 .hero__btn-link_accent {
+    background-color: $btn-bg-dark-color;
+    color: $btn-bg-light-color;
 
     background-color: $third-text-color;
     color: $secondary-text-color;
-
 
     transition: background-color 300ms ease-in;
 
