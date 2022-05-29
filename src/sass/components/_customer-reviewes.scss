@@ -1,0 +1,211 @@
+.customer {
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+.customer__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.slick-slide .slick-current .slick-active {
+  margin-bottom: 0;
+}
+
+// class="customer__item slick-slide slick-current slick-active
+.customer__item {
+  // position: relative;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 173px;
+  }
+  margin-bottom: 0;
+  padding-bottom: 137px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 237px;
+  }
+}
+.container__customer {
+  // position: relative;
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    padding: 0 128px;
+  }
+}
+.customer__dabl {
+  content: '\201E	';
+  position: absolute;
+  top: 44px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  @media screen and (min-width: 480px) {
+    left: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 43px;
+  }
+  transform: rotate(-180deg);
+}
+.customer__img {
+  margin: 0 auto;
+  // padding-bottom: 32px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 16px;
+    }
+  }
+}
+.customer__reviewes {
+  position: relative;
+  background-color: $slader-bg-color;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  padding-top: 31px;
+
+  padding-bottom: 26px;
+  z-index: -1;
+}
+
+// .customer__gradient
+// // :not(:first-child)
+// {
+//   background-image: repeating-linear-gradient(
+//     180deg,
+//     transparent,
+//     transparent 30px,
+//     #333 31px
+//   );
+//   margin: 0 auto;
+//   padding-left: 50px;
+//   padding-right: 50px;
+
+//   width: 100%;
+//   height: 100%;
+
+// }
+
+.customer__p {
+  position: relative;
+  text-indent: 18px;
+  //  padding: 43px 58px 26px 65px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.6;
+  text-align: center;
+  color: $fifth-text-color;
+  z-index: 2;
+  // display: inline;
+  // 	background-repeat: no-repeat;
+  // 	background-position: center bottom 1px;
+  // 	background-size: 100% 5px;
+  // 	background-image: linear-gradient(to top, #fff, #000);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 29px,
+    $pseudo-element-color 31px
+  );
+  margin: 0 50px;
+  @media screen and (min-width: 1200px) {
+    margin: 0 105px;
+  }
+  // padding-left: 50px;
+  // padding-right: 50px;
+  // width: 80%;
+  // height: 100%;
+}
+.customer__bulet--item {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 16px;
+    }
+  }
+}
+.customer__bulet--list {
+  border: 0.1875em solid $slader-icon-color;
+  border-radius: 50%;
+  // box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 4px;
+  width: 4px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.customer__h2 {
+  text-align: center;
+  margin-top: 16px;
+}
+.slick-next,
+.slick-arrow {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.slick-track {
+  position: relative;
+}
+.slick-dots {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  top: 85%;
+  @media screen and (min-width: 327px) {
+    top: 85%;
+  }
+  @media screen and (min-width: 367px) {
+    top: 83%;
+  }
+  @media screen and (min-width: 480px) {
+    top: 76%;
+  }
+  @media screen and (min-width: 768px) {
+    top: 73%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 63%;
+  }
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slick-dots li {
+}
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 50%;
+  background: #d9d9d9;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.slick-dots li.slick-active button {
+  background: none;
+  background-repeat: no-repeat;
+  background-image: url(/src/images/ice-cream_customer_reviews/home\ 1.png);
+  background-size: auto;
+  background-position: top;
+  width: 25px;
+  height: 25px;
+}

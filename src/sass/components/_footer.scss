@@ -1,0 +1,34 @@
+.footer {
+  background-color: $bg-secondary-color;
+}
+
+.social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__item + &__item {
+    margin-left: 28px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    fill: $social-icon-color;
+    background-color: $social-icon-bg-color;
+
+    transition: background-color 200ms ease-in;
+
+    &:hover,
+    &:focus {
+      background-color: $social-icon-hover-color;
+    }
+  }
+}
