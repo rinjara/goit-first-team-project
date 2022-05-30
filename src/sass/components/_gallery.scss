@@ -20,35 +20,68 @@ margin: 0;
     @media screen and(min-width: 768px) {
        height:264px;
         }
+ @media screen and(min-width: 1200px) {
+                height: 430px;
+}}
+
+.photo-item{
+&:not(:last-child) {
+            margin-bottom: 3px;}
+ @media screen and(min-width: 768px) {
+&:not(:last-child) {
+        margin-bottom: 4px;
+    }
 }
-.photo-item:not(:last-child) {
-            margin-bottom: 3px;
-}
-.photo-container:not(:last-child) {
-    margin-right: 3px;
-}
+@media screen and(min-width: 1200px) {
+    &:not(:last-child) {
+            margin-bottom: 7px;
+    }}}
+.photo-container
+{
+&:not(:last-child) {
+    margin-right: 3px;}
+    @media screen and(min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 4px;
+            }}
+@media screen and(min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 7px;
+                    }}}
+
 .gallery-height{
     padding-top: 39px;
     @media screen and(min-width: 768px) {
         padding-top: 86px;
         }
-}
+     @media screen and(min-width: 1200px) {
+            padding-top: 142px;
+                 }}
 .height-list{
     padding-top: 24px;
     @media screen and(min-width: 768px) {
             padding-top: 54px;
         }
+    @media screen and(min-width: 1200px) {
+           padding-top: 86px;
+                  }
 }
 .height-list-img{
     padding-top: 28px;
     @media screen and(min-width: 768px) {
             padding-top: 45px;
         }
+    @media screen and(min-width: 1200px) {
+        padding-top:98px;
+                  }
 }
 .height-list-photo{
     padding-top: 14px;
     @media screen and(min-width: 768px) {
             padding-top: 33px;
+        }
+        @media screen and(min-width: 1200px) {
+            padding-top: 50px;
         }
 }
 .height-list-picture{
@@ -56,6 +89,9 @@ padding-top: 43px;
 @media screen and(min-width: 768px) {
         padding-top: 95px;
     }
+ @media screen and(min-width: 1200px) {
+          padding-top: 152px;
+                 }
 }
 .gallery-img{
     transition: $transition;
