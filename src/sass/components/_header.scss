@@ -134,11 +134,8 @@
 }
 
 .button-header {
-
-    @include max-tablet {
-        display: none;
-    }
-
+    display: none;
+   
 
     @include tablet {
         font-weight: 700;
@@ -157,8 +154,16 @@
 
         min-width: 160px;
         display: flex;
+        justify-content: center;
         border-radius: 22px;
-        padding: 15px 62px 15px 43px;
+        padding: 15px  15px ;
+
+        &:hover,
+        &:focus {
+                background-color: $btn-light-hover-color;
+            }
+
+        
     }
 
 
