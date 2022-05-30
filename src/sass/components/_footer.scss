@@ -1,11 +1,40 @@
 .footer {
+  padding-bottom: 20px;
   background-color: $bg-secondary-color;
+}
+.footer-label {
+  margin-bottom: 40px;
+
+  &__text {
+    max-width: 232px;
+    font-family: Titan One, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+
+    color: $fourth-text-color;
+  }
+  &__accent {
+    max-width: 200px;
+
+    font-family: Titan One, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+
+    text-transform: uppercase;
+
+    color: $third-text-color;
+  }
 }
 
 .social-media-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  margin-bottom: 40px;
 
   &__item + &__item {
     margin-left: 28px;
@@ -31,4 +60,37 @@
       background-color: $social-icon-hover-color;
     }
   }
+}
+
+.footer-contacts {
+  margin-bottom: 40px;
+
+  &__text {
+    font-family: DM Sans, sans-serif;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+
+    text-align: right;
+
+    color: #000000;
+  }
+
+  &__tel {
+    color: $third-text-color;
+  }
+}
+
+.rights-reserved {
+  padding-top: 16px;
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: $primary-text-color;
+  border-top: 1px solid #e1e1e1;
 }
