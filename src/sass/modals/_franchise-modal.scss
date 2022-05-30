@@ -1,4 +1,4 @@
-.backdrop {
+.franchise-backdrop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,13 +11,13 @@
   }
 }
 
-.backdrop.is-hidden .modal {
+.franchise-backdrop.is-hidden .franchise-modal {
   @media screen and (min-width: 480px) {
     transform: translate(-50%, -50%) scale(0) rotate(360deg);
   }
 }
 
-.modal {
+.franchise-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,7 +49,7 @@
   //   }
 }
 
-.modal__logo {
+.franchise-modal__logo {
   display: none;
 
   @include tablet {
@@ -60,7 +60,7 @@
   }
 }
 
-.modal__btn-close {
+.franchise-modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -80,12 +80,12 @@
   }
 }
 
-.modal__icon-close {
+.franchise-modal__icon-close {
   fill: currentColor;
   transition: fill $transition;
 
-  .modal__btn-close:hover &,
-  .modal__btn-close:focus & {
+  .franchise-modal__btn-close:hover &,
+  .franchise-modal__btn-close:focus & {
     fill: $btn-dark-hover-color;
     cursor: pointer;
   }
@@ -97,7 +97,7 @@
   visibility: hidden;
 }
 
-.modal__title {
+.franchise-modal__title {
   font-weight: 700;
   font-size: 19px;
   line-height: 1.15;
@@ -114,7 +114,7 @@
   }
 }
 
-.modal__text {
+.franchise-modal__text {
   display: none;
 
   @include tablet {
@@ -128,7 +128,7 @@
   }
 }
 
-.form__field {
+.franchise-form__field {
   margin-bottom: 8px;
 
   &:nth-child(4) {
@@ -142,7 +142,7 @@
   }
 }
 
-.form__title {
+.franchise-form__title {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -155,11 +155,11 @@
   }
 }
 
-.form__wrap {
+.franchise-form__wrap {
   position: relative;
 }
 
-.form__input {
+.franchise-form__input {
   height: 40px;
   padding: 12px 12px 12px 42px;
   width: 100%;
@@ -180,7 +180,7 @@
   }
 }
 
-.form__icon {
+.franchise-form__icon {
   fill: $third-text-color;
   position: absolute;
   left: 12px;
@@ -188,7 +188,7 @@
   transform: translateY(-50%);
 }
 
-.form__textarea {
+.franchise-form__textarea {
   font-size: 14px;
   color: $third-text-color;
   resize: none;
@@ -217,7 +217,7 @@
   }
 }
 
-.checkbox {
+.franchise-checkbox {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -227,7 +227,7 @@
   //   }
 }
 
-.checkbox__label {
+.franchise-checkbox__label {
   display: flex;
   align-items: center;
   width: 100%;
@@ -241,7 +241,7 @@
   //   }
 }
 
-.checkbox__agreement {
+.franchise-checkbox__agreement {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -257,28 +257,34 @@
   //   }
 }
 
-.checkbox__icon {
+.franchise-checkbox__icon {
   fill: transparent;
   transition: fill $transition;
 }
 
-.checkbox__input:checked + .checkbox__label .checkbox__agreement {
+.franchise-checkbox__input:checked
+  + .franchise-checkbox__label
+  .franchise-checkbox__agreement {
   background-color: $btn-dark-hover-color;
   border: none;
 }
-.checkbox__input:focus + .checkbox__label .checkbox__agreement {
+.franchise-checkbox__input:focus
+  + .franchise-checkbox__label
+  .franchise-checkbox__agreement {
   border-color: $btn-dark-hover-color;
 }
 
-.checkbox__input:checked + .checkbox__label .checkbox__icon {
+.franchise-checkbox__input:checked
+  + .franchise-checkbox__label
+  .franchise-checkbox__icon {
   fill: $secondary-text-color;
 }
 
-.checkbox__link {
+.franchise-checkbox__link {
   color: $btn-dark-hover-color;
 }
 
-.form__checkbox {
+.franchise-form__checkbox {
   margin-bottom: 9px;
 
   //   @include mobile {
@@ -286,7 +292,7 @@
   //   }
 }
 
-.form__btn {
+.franchise-form__btn {
   display: block;
   width: 200px;
   padding: 10px 0px;
@@ -295,7 +301,7 @@
   margin: 0 auto;
 }
 
-.modal-franchise__btn {
+.franchise-modal__btn {
   padding: 11px 11px;
   color: $third-text-color;
   background-color: $btn-bg-light-color;
