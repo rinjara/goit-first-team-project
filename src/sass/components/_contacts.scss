@@ -1,5 +1,4 @@
 .contacts {
-  padding-top: 40px;
   padding-bottom: 48px;
   background-image: linear-gradient(
     $bg-primary-color 22%,
@@ -7,7 +6,17 @@
   );
 }
 
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include tablet {
+    display: flex;
+  }
+}
+
 .contacts__item {
+  width: 290px;
   padding: 40px 32px;
   border: 1px solid $pseudo-element-color;
   background: $fifth-elements-bg-color;
@@ -19,6 +28,22 @@
   }
   &:last-child {
     margin-bottom: 32px;
+  }
+
+  @include tablet {
+    width: calc((100% - 2 * 32px) / 3);
+
+    & + & {
+      margin-left: 32px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -34,6 +59,13 @@
   text-transform: uppercase;
   padding: 0 24px;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.77;
+    padding: 0 15px;
+    margin-bottom: 32px;
+  }
 }
 
 .foodtruck {
@@ -51,6 +83,12 @@
   font-size: 12px;
   line-height: 1.83;
   color: $fifth-text-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 12px;
+  }
 }
 
 .contacts__subscribe {
@@ -61,6 +99,13 @@
   font-size: 12px;
   line-height: 1.5;
   color: $primary-text-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__day {
@@ -69,6 +114,11 @@
   font-size: 12px;
   line-height: 1.83;
   color: $fifth-text-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 
 .contacts__time {
@@ -76,11 +126,16 @@
   font-size: 12px;
   line-height: 1.92;
   color: $fourth-text-color;
+}
 
-  &:first-child {
-    margin-bottom: 8px;
+.extra-time {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 12px;
   }
 }
+
 .contacts__tel {
   display: block;
   margin-top: 24px;
@@ -90,6 +145,13 @@
   font-size: 12px;
   line-height: 1.5;
   color: $primary-text-color;
+
+  @include tablet {
+    margin-top: 32px;
+    padding-top: 32px;
+    font-size: 14px;
+    line-height: 1.72;
+  }
 }
 
 .contacts__email {
@@ -98,6 +160,11 @@
   font-size: 12px;
   line-height: 1.5;
   color: $primary-text-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.72;
+  }
 }
 
 .contacts__link-location {

@@ -1,92 +1,105 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__btn-close" data-modal-close>
-      <svg class="modal__icon-close" width="18" height="18">
-        <use href="images/symbol-defs.svg#icon-modal-close"></use>
+<div class="franchise-backdrop is-hidden" data-modal>
+  <div class="franchise-modal">
+    <a href="/src/index.html" class="franchise-modal__logo">
+      <img src="/src/images/logo.svg" alt="logo" width="199" height="50"
+    /></a>
+    <button class="franchise-modal__btn-close" data-modal-close>
+      <svg class="franchise-modal__icon-close" width="18" height="18">
+        <use href="/src/images/symbol-defs.svg#icon-modal-close"></use>
       </svg>
     </button>
-    <h3 class="modal__title">Request Franchise Information</h3>
-    <p class="modal__text">
+    <h3 class="franchise-modal__title">Request Franchise Information</h3>
+    <p class="franchise-modal__text">
       Want to learn more about opening your own ICECREAM franchise?<br />
       Fill out this form to get started:
     </p>
-    <form class="form">
-      <div class="form__field">
-        <label class="form__title" for="username">First and last name</label>
-        <div class="form__wrap">
+    <form class="franchise-form">
+      <div class="franchise-form__field">
+        <label class="franchise-form__title" for="username"
+          >First and last name</label
+        >
+        <div class="franchise-form__wrap">
           <input
-            class="form__input"
+            class="franchise-form__input"
             type="text"
             id="username"
             name="username"
-          /><svg class="form__icon" width="18" height="18">
-            <use href="images/symbol-defs.svg#icon-modal-username"></use>
+          /><svg class="franchise-form__icon" width="18" height="18">
+            <use href="/src/images/symbol-defs.svg#icon-modal-username"></use>
           </svg>
         </div>
       </div>
-      <div class="form__field">
-        <label class="form__title" for="phone">Phone</label>
-        <div class="form__wrap">
-          <input class="form__input" type="tel" id="phone" name="phone" /><svg
-            class="form__icon"
-            width="18"
-            height="18"
-          >
-            <use href="images/symbol-defs.svg#icon-modal-tel"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form__field">
-        <label class="form__title" for="email">Email</label>
-        <div class="form__wrap">
-          <input class="form__input" type="email" id="email" name="email" /><svg
-            class="form__icon"
-            width="18"
-            height="18"
-          >
-            <use href="images/symbol-defs.svg#icon-modal-email"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form__field">
-        <label class="form__title" for="interest">State&city of interest</label>
-        <div class="form__wrap">
+      <div class="franchise-form__field">
+        <label class="franchise-form__title" for="phone">Phone</label>
+        <div class="franchise-form__wrap">
           <input
-            class="form__input"
+            class="franchise-form__input"
+            type="tel"
+            id="phone"
+            name="phone"
+          /><svg class="franchise-form__icon" width="18" height="18">
+            <use href="/src/images/symbol-defs.svg#icon-modal-tel"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise-form__field">
+        <label class="franchise-form__title" for="email">Email</label>
+        <div class="franchise-form__wrap">
+          <input
+            class="franchise-form__input"
+            type="email"
+            id="email"
+            name="email"
+          /><svg class="franchise-form__icon" width="18" height="18">
+            <use href="/src/images/symbol-defs.svg#icon-modal-email"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise-form__field">
+        <label class="franchise-form__title" for="interest"
+          >State&city of interest</label
+        >
+        <div class="franchise-form__wrap">
+          <input
+            class="franchise-form__input"
             type="text"
             id="interest"
             name="interest"
           />
         </div>
       </div>
-      <div class="form__field">
-        <label class="form__title" for="comment">Tell us about yourself</label>
+      <div class="franchise-form__field">
+        <label class="franchise-form__title" for="comment"
+          >Tell us about yourself</label
+        >
         <textarea
-          class="form__textarea"
+          class="franchise-form__textarea"
           name="comment"
           id="comment"
           placeholder="Do you own other shops, your total net worth, your total liquid assets"
         ></textarea>
       </div>
-      <div class="checkbox form__checkbox">
+      <div class="franchise-checkbox franchise-form__checkbox">
         <input
-          class="checkbox__input visually-hidden"
+          class="franchise-checkbox__input visually-hidden"
           type="checkbox"
           name="checkbox"
           id="checkbox"
         />
-        <label class="checkbox__label checkbox" for="checkbox">
-          <span class="checkbox__agreement">
-            <svg class="checkbox__icon" width="16" height="15">
+        <label class="franchise-checkbox__label checkbox" for="checkbox">
+          <span class="franchise-checkbox__agreement">
+            <svg class="franchise-checkbox__icon" width="16" height="15">
               <use
-                href="images/symbol-defs.svg#icon-checkbox"
+                href="/src/images/symbol-defs.svg#icon-checkbox"
               ></use></svg></span
-          >Agree with the&nbsp;<a href="" class="checkbox__link checkbox"
+          >Agree with the&nbsp;<a
+            href=""
+            class="franchise-checkbox__link franchise-checkbox"
             >privacy policy
           </a></label
         >
       </div>
-      <button class="modal-franchise__btn button" type="submit">
+      <button class="franchise-modal__btn button" type="submit">
         Sent request &#62;
       </button>
     </form>
