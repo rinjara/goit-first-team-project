@@ -8,7 +8,7 @@
     height: 100%;
 
     overflow-y: scroll;
-    background-color: rgba(255, 165, 0, 0.5);
+    //background-color: rgba(255, 165, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity $transition;
 
@@ -22,12 +22,12 @@
         pointer-events: none;
     }
 
-    &.is--hidden .modal {
+    &.is--hidden .pr-modal {
         transform: translate(-50%, -50%) scale(1.1);
     }
 }
 
-.modal {
+.pr-modal {
     position: absolute;
     width: 90%;
     left: 50%;
@@ -37,7 +37,7 @@
     max-height: 95vh;
 
     padding: 25px;
-    background-color: var(--color-design-white);
+    background-color:white;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -53,17 +53,18 @@
         width: 80%;
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
         width: 50%;
     }
 }
 
-.modal__title {
+.pr-modal__title {
     position: relative;
     color: orange;
     font-size: 26px;
     padding-bottom: 160px;
     margin-bottom: 0;
+    text-align: center;
 
     @media screen and(min-width:480px) {
         padding-bottom: 200px;
@@ -75,7 +76,7 @@
     }
 }
 
-.modal--ice-cream .modal__title::after {
+.pr-modal--ice-cream .pr-modal__title::after {
     content: '';
     width: 150px;
     height: 150px;
@@ -120,7 +121,7 @@
         }
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
         width: 220px;
         height: 220px;
         background-image: url('/src/images/ice-cream_products/home-pic1-desktop1x.png');
@@ -133,7 +134,7 @@
     }
 }
 
-.modal--ice-coffee .modal__title::after {
+.pr-modal--ice-coffee .pr-modal__title::after {
     content: '';
     width: 150px;
     height: 150px;
@@ -178,7 +179,7 @@
         }
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
         width: 220px;
         height: 220px;
         transform: translate(-50%, -50%);
@@ -192,7 +193,7 @@
     }
 }
 
-.modal--milkshakes .modal__title::after {
+.pr-modal--milkshakes .pr-modal__title::after {
     content: '';
     width: 150px;
     height: 150px;
@@ -237,7 +238,7 @@
         }
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
         width: 220px;
         height: 220px;
         transform: translate(-50%, -45%);
@@ -251,7 +252,7 @@
     }
 }
 
-.modal-close-btn {
+.pr-modal__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,8 +265,8 @@
     border-color: transparent;
     border-width: 2px;
     border-radius: 50%;
-    background-color: white;
-    transition: background-color 250ms linear;
+    background-color: black;
+    transition: background-color $transition;
 
     &:hover,
     &:focus {
@@ -273,17 +274,17 @@
     }
 }
 
-.modal-close-btn__icon {
+.pr-modal__btn-icon {
     fill: navy;
-    transition: fill 250ms linear;
+    transition: fill $transition;
 
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
+    .pr-modal_btn:hover &,
+    .pr-modal_btn:focus & {
         fill: white;
     }
 }
 
-.modal__text {
+.pr-modal__text {
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 14px;
@@ -302,14 +303,14 @@
         margin-bottom: 20px;
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
         font-size: 18px;
         line-height: 1.75;
         margin-bottom: 10px;
     }
 }
 
-// .modal__order-link {
+// .pr-modal__link {
 //     width: 80px;
 //     height: 40px;
 //     margin: 0 auto;
