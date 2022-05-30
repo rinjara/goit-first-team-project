@@ -38,9 +38,9 @@
   }
 
   @include tablet {
-    width: 550px;
-    min-height: 609px;
-    padding: 66px 30px 12px 30px;
+    width: 500px;
+    height: 515px;
+    padding: 60px 30px 10px 30px;
   }
 
   //   @include desktop {
@@ -55,9 +55,13 @@
   @include tablet {
     display: inline-block;
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 175px;
   }
+}
+
+.franchise-modal__img {
+  max-width: 85%;
 }
 
 .franchise-modal__btn-close {
@@ -108,7 +112,7 @@
   text-transform: uppercase;
 
   @include tablet {
-    font-size: 25px;
+    font-size: 24px;
     color: $secondary-text-color;
     margin-bottom: 8px;
   }
@@ -117,7 +121,7 @@
 .franchise-modal__text {
   display: none;
 
-  @include tablet {
+  @include desktop {
     display: block;
     font-weight: 500;
     font-size: 12px;
@@ -152,6 +156,7 @@
 
   @include tablet {
     font-size: 14px;
+    margin-bottom: 2px;
   }
 }
 
@@ -177,6 +182,11 @@
   &:hover,
   &:focus {
     border-color: $btn-dark-hover-color;
+  }
+
+  @include tablet {
+    height: 38px;
+    padding: 9px 9px 9px 42px;
   }
 }
 
@@ -205,9 +215,10 @@
     border-color: $btn-dark-hover-color;
   }
 
-  //   @include mobile {
-  //     height: 122px;
-  //   }
+  @include tablet {
+    height: 46px;
+    padding: 6px 6px;
+  }
 
   &::placeholder {
     font-size: 12px;
@@ -302,12 +313,21 @@
 }
 
 .franchise-modal__btn {
-  padding: 11px 11px;
+  display: block;
+  padding: 11px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  cursor: pointer;
+  min-width: 162px;
+  margin-left: auto;
+  margin-right: auto;
   color: $third-text-color;
   background-color: $btn-bg-light-color;
   border: 1px solid $btn-bg-light-color;
   border-radius: 22px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition;
 
   &:hover,
   &:focus {
