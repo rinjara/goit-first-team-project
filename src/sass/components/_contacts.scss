@@ -7,15 +7,14 @@
 }
 
 .contacts__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   @include tablet {
     display: flex;
   }
 }
 
 .contacts__item {
+  margin-left: auto;
+  margin-right: auto;
   width: 290px;
   padding: 40px 32px;
   border: 1px solid $pseudo-element-color;
@@ -62,7 +61,7 @@
 
   @include tablet {
     font-size: 16px;
-    line-height: 1.77;
+    line-height: 1.88;
     padding: 0 15px;
     margin-bottom: 32px;
   }
@@ -86,7 +85,7 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 1.85;
+    line-height: 1.86;
     margin-bottom: 12px;
   }
 }
@@ -102,7 +101,7 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 1.55;
+    line-height: 1.64;
     margin-bottom: 32px;
     padding-bottom: 32px;
   }
@@ -124,8 +123,13 @@
 .contacts__time {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.92;
+  line-height: 1.83;
   color: $fourth-text-color;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.86;
+  }
 }
 
 .extra-time {
@@ -150,7 +154,7 @@
     margin-top: 32px;
     padding-top: 32px;
     font-size: 14px;
-    line-height: 1.72;
+    line-height: 1.86;
   }
 }
 
@@ -163,7 +167,7 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 1.72;
+    line-height: 1.86;
   }
 }
 
