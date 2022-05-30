@@ -131,7 +131,16 @@
         top: 113px;
         bottom: 0;
         right: 32px;
-    
+    // ___________________anime_________________
+
+animation-name: appearance ;
+animation-duration: 3s;
+animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+// ___________________anime_________________
+
+
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             top: 20px;
         }
@@ -150,7 +159,8 @@
     
             &:hover,
             &:focus {
-                transform: scale(1.1);
+                // 
+                transform: scale(1.01);
             }
         }
     
@@ -195,7 +205,7 @@
         width: 538px;
         height: 538px;
         top: 52px;
-        left: 485px;
+        left: 417px;
     }
 }
 
@@ -207,6 +217,11 @@ display: block;
 // width: 154px;
 // height: 152px;
     // ----------анімацію.!?
+    animation-name: goright;
+    
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+       
 }
 .hero-left-wraper{
     display: flex;
@@ -236,13 +251,18 @@ border: none;
     position: absolute;
     bottom: 0;
     right: 34px;
+animation-name: goup;
+
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+
 
     // ----------анімацію.!?
     transition: $transition;
 
     // &:hover,
     // &:focus {
-    //     transform: scale(1.1);
+    //     animation: pulsation $transition;
     // }
 }
 
@@ -300,7 +320,7 @@ border: none;
 
 @media screen and (min-width: 1200px) {
     .hero__img-right {
-        right: 109px;
+        right: 5px;
     }
 }
 
@@ -324,17 +344,22 @@ border: none;
 .hero__stat-list {
     position: absolute;
     top: 96px;
-    right: 44px;
+    right: 20px;
 }
 
 @media screen and (min-width: 1200px) {
     .hero__stat-list {
         top: 156px;
-        right: 115px;
+        right: 50px;
     }
 }
 .hero__stat-list-item {
     position: relative;
+    transition: $transition;
+    &:hover,
+    &:focus{
+       transform: scale(1.1) ;
+    }
 }
 
 .hero__stat-list-item:not(:last-child) {
@@ -406,5 +431,45 @@ border: none;
 
     100% {
         transform: scale(1);
+    }
+}
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes goup {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes goright {
+    0% {
+        transform: translatex(-100%) scale(.5) ;
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes pulsation {
+    50% {
+        transform: rotate(-2deg);
+       
+    }
+
+    100% {
+        transform: rotate(2deg);
+       
     }
 }
