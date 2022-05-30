@@ -1,5 +1,5 @@
 .customer {
-  padding-top: 40px;
+  padding-top: 0;
   margin-bottom: 0;
 }
 .customer__list {
@@ -12,15 +12,32 @@
 }
 
 // class="customer__item slick-slide slick-current slick-active
-.customer__item {
-  // position: relative;
-  @media screen and (min-width: 480px) {
-    padding-bottom: 173px;
-  }
+// .customer__item {
+//   // position: relative;
+//   @media screen and (min-width: 480px) {
+//     padding-bottom: 76px;
+//   }
+//   margin-bottom: 0;
+//   padding-bottom: 137px;
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 124px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     padding-bottom: 164px;
+//   }
+// }
+.slick-initialized .slick-slide {
   margin-bottom: 0;
-  padding-bottom: 137px;
+  padding-bottom: 76px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 76px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 124px;
+  }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 237px;
+    padding-bottom: 164px;
   }
 }
 .container__customer {
@@ -53,9 +70,9 @@
   background-position: center;
   border-radius: 50%;
   @media screen and (min-width: 768px) {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     @media screen and (min-width: 1200px) {
-      padding-bottom: 16px;
+      padding-bottom: 0px;
     }
   }
 }
@@ -170,21 +187,21 @@
   display: flex;
   justify-content: center;
   gap: 18px;
-  top: 85%;
+  top: 92%;
   @media screen and (min-width: 327px) {
-    top: 85%;
+    top: 93%;
   }
   @media screen and (min-width: 367px) {
-    top: 83%;
+    top: 92%;
   }
   @media screen and (min-width: 480px) {
-    top: 76%;
+    top: 91%;
   }
   @media screen and (min-width: 768px) {
-    top: 73%;
+    top: 79%;
   }
   @media screen and (min-width: 1200px) {
-    top: 63%;
+    top: 71%;
   }
   left: 50%;
   transform: translate(-50%, -50%);
