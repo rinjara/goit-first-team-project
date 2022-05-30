@@ -4,9 +4,43 @@
     <h2 class="about__title">HOW IT'S MADE?</h2>
     <div class="about__box">
       <div class="about__imges ">
-        <img class="about__cow" src="/src/images/ice-cream_about/home-pic4-mob1x.png" alt="cow">
+        <picture>
+          <source srcset="/src/images/ice-cream_about/home-pic4-desktop1x.png 1x,
+          /src/images/ice-cream_about/home-pic4-desktop2x.png 2x,
+          /src/images/ice-cream_about/home-pic4-desktop3x.png 3x" media="(min-width:1200px)">
+ 
+          <source
+          srcset="/src/images/ice-cream_about/home-pic41-tab1x.png 1x,
+          /src/images/ice-cream_about/home-pic41-tab2x.png 2x,
+          /src/images/ice-cream_about/home-pic41-tab3x.png 3x"
+           media="(min-width:768px)">
+
+          <source srcset="/src/images/ice-cream_about/home-pic4-mob1x.png 1x,
+          /src/images/ice-cream_about/home-pic4-mob2x.png 2x,
+          /src/images/ice-cream_about/home-pic41-mob3x.png 3x" media="(min-width:320px)">
+
+          <img class="about__cow" 
+          src="/src/images/ice-cream_about/home-pic4-desktop1x.png"
+          alt="cow">
+        </picture>
+        <picture>
+          <source 
+          srcset="/src/images/ice-cream_about/sectionbg11-desktop1x.png 1x,
+          /src/images/ice-cream_about/sectionbg11-desktop2x.png 2x,
+          /src/images/ice-cream_about/sectionbg11-desktop3x.png 3x" 
+          media="(min-width:1200px)">
+          
+
+          <source 
+          srcset="/src/images/ice-cream_about/sectionbg11-mob1x.png 1x,
+          /src/images/ice-cream_about/sectionbg11-mob2x.png 2x,
+          /src/images/ice-cream_about/sectionbg11-mob3x.png 3x"
+           media="(min-width:320px)">
+          <img class="about__fone" src="/src/images/ice-cream_about/sectionbg11-desktop1x.png" alt="milk">
+        </picture>
         
-        <img class="about__fone" src="/src/images/ice-cream_about/sectionbg11-mob1x.png" alt="milk">
+        
+        
       </div>
       <div class="about__content">
         <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
