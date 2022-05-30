@@ -1,6 +1,10 @@
 .footer {
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
   background-color: $bg-secondary-color;
+
+  // @media screen and (min-wadth: 768px) {
+  //   padding-bottom: 8px;
+  // }
 }
 
 .footer__flex {
@@ -140,6 +144,7 @@
 
 .rights-reserved {
   padding-top: 16px;
+  padding-bottom: 20px;
 
   font-family: DM Sans, sans-serif;
   font-weight: 700;
@@ -154,6 +159,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
 
     font-size: 14px;
     line-height: 1.85;
