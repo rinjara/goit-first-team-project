@@ -128,14 +128,13 @@
   top: 113px;
   bottom: 0;
   right: 32px;
-
-  // ___________________anime_________________ //
+  // ___________________anime_________________
 
   animation-name: appearance;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  // ___________________anime_________________ //
+  // ___________________anime_________________
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 20px;
@@ -155,8 +154,16 @@
 
     &:hover,
     &:focus {
+      //
       transform: scale(1.01);
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 450px;
+    top: 112px;
+    width: 236px;
+    height: 557px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -216,18 +223,15 @@
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
-
 .hero-left-wraper {
   display: flex;
 }
-
 .btn-pointer {
   display: inline-block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   border: none;
-
   @media screen and (min-width: 1200px) {
     width: 24px;
     height: 24px;
@@ -244,7 +248,6 @@
     bottom: 35px;
   }
 }
-
 .hero__img-right {
   position: absolute;
   bottom: 0;
@@ -352,7 +355,6 @@
 .hero__stat-list-item {
   position: relative;
   transition: $transition;
-
   &:hover,
   &:focus {
     transform: scale(1.1);
