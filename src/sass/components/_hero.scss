@@ -129,13 +129,13 @@
   bottom: 0;
   right: 32px;
 
-  // ___________________anime_________________
+  // ___________________anime_________________ //
 
   animation-name: appearance;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  // ___________________anime_________________
+  // ___________________anime_________________ //
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 20px;
