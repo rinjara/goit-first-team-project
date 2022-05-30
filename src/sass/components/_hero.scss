@@ -124,30 +124,49 @@
 }
 
 .hero__img-center {
-  position: absolute;
-  top: 113px;
-  bottom: 0;
-  right: 32px;
+    position: absolute;
+        top: 113px;
+        bottom: 0;
+        right: 32px;
+    // ___________________anime_________________
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 20px;
-  }
+animation-name: appearance ;
+animation-duration: 3s;
+animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-  @media screen and (min-width: 768px) {
-    width: 143px;
-    height: 336px;
-    right: 247px;
-    top: 65px;
 
-    animation-name: appearance;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// ___________________anime_________________
 
-    transition: $transition;
 
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            top: 20px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 143px;
+            height: 336px;
+            right: 247px;
+            top: 65px;
+    
+            animation-name: appearance;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            transition: $transition;
+    
+            &:hover,
+            &:focus {
+                // 
+                transform: scale(1.01);
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            right: 450px;
+            top: 112px;
+            width: 236px;
+            height: 557px;
+        }
     }
   }
 
@@ -187,33 +206,38 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__ellipse {
-    width: 538px;
-    height: 538px;
-    top: 52px;
-    left: 485px;
-  }
+    .hero__ellipse {
+        width: 538px;
+        height: 538px;
+        top: 52px;
+        left: 417px;
+    }
 }
 
 .hero__img-left {
-  position: absolute;
-  bottom: 28px;
-  left: 34px;
-  display: block;
-  // width: 154px;
-  // height: 152px;
-  // ----------анімацію.!?
+    position: absolute;
+    bottom: 28px;
+    left: 34px;
+display: block;
+// width: 154px;
+// height: 152px;
+    // ----------анімацію.!?
+    animation-name: goright;
+    
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+       
 }
-.hero-left-wraper {
-  display: flex;
+.hero-left-wraper{
+    display: flex;
 }
-.btn-pointer {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: none;
-  @media screen and (min-width: 1200px) {
+.btn-pointer{
+   display: inline-block;
+width: 18px;
+height: 18px;
+border-radius: 50%;
+border: none;
+@media screen and (min-width: 1200px) {
     width: 24px;
     height: 24px;
   }
@@ -228,17 +252,21 @@
   }
 }
 .hero__img-right {
-  position: absolute;
-  bottom: 0;
-  right: 34px;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+animation-name: goup;
+
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 
   // ----------анімацію.!?
   transition: $transition;
-
-  // &:hover,
-  // &:focus {
-  //     transform: scale(1.1);
-  // }
+  
+    // &:hover,
+    // &:focus {
+    //     animation: pulsation $transition;
+    // }
 }
 
 .hero__text {
@@ -293,9 +321,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__img-right {
-    right: 109px;
-  }
+    .hero__img-right {
+        right: 5px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -316,19 +344,24 @@
   }
 }
 .hero__stat-list {
-  position: absolute;
-  top: 96px;
-  right: 44px;
+    position: absolute;
+    top: 96px;
+    right: 20px;
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__stat-list {
-    top: 156px;
-    right: 115px;
-  }
+    .hero__stat-list {
+        top: 156px;
+        right: 50px;
+    }
 }
 .hero__stat-list-item {
-  position: relative;
+    position: relative;
+    transition: $transition;
+    &:hover,
+    &:focus{
+       transform: scale(1.1) ;
+    }
 }
 
 .hero__stat-list-item:not(:last-child) {
@@ -397,7 +430,47 @@
     transform: scale(0.25);
   }
 
-  100% {
-    transform: scale(1);
-  }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes goup {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes goright {
+    0% {
+        transform: translatex(-100%) scale(.5) ;
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes pulsation {
+    50% {
+        transform: rotate(-2deg);
+       
+    }
+
+    100% {
+        transform: rotate(2deg);
+       
+    }
 }
