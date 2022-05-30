@@ -216,29 +216,35 @@
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
+
 .hero-left-wraper {
   display: flex;
 }
+
 .btn-pointer {
   display: inline-block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   border: none;
+
   @media screen and (min-width: 1200px) {
     width: 24px;
     height: 24px;
   }
 }
+
 .hero__btn-icon {
   fill: #d41443;
 }
+
 @media screen and (min-width: 1200px) {
   .hero__img-left {
     left: 16px;
     bottom: 35px;
   }
 }
+
 .hero__img-right {
   position: absolute;
   bottom: 0;
@@ -346,6 +352,7 @@
 .hero__stat-list-item {
   position: relative;
   transition: $transition;
+
   &:hover,
   &:focus {
     transform: scale(1.1);
