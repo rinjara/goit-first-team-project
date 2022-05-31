@@ -159,6 +159,11 @@
         display: flex;
         border-radius: 22px;
         padding: 15px 62px 15px 43px;
+
+        &:hover,
+            &:focus {
+                background-color: $btn-light-hover-color;
+            }
     }
 
 

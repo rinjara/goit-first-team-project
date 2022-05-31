@@ -50,4 +50,9 @@
     cursor: pointer;
 
     color: $third-text-color;
+
+    &:hover,
+    &:focus {
+        background-color: $btn-light-hover-color;
+    }
 }
