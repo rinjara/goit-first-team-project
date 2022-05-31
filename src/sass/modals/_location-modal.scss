@@ -40,9 +40,10 @@
   }
 
   @include tablet {
-    width: 550px;
-    min-height: 609px;
-    padding: 66px 30px 12px 30px;
+    width: 500px;
+    min-height: 500px;
+    padding: 61px 30px 12px 30px;
+    text-align: center;
   }
 }
 
@@ -51,10 +52,19 @@
   position: absolute;
   top: 10px;
   left: 10px;
+
+  @include tablet {
+    top: 17px;
+    left: 32px;
+  }
 }
 
 .location-modal__img {
   max-width: 57%;
+
+  @include tablet {
+    max-width: 75%;
+  }
 }
 
 .location-modal__btn-close {
@@ -129,8 +139,10 @@
   }
 }
 
-.location-modal__group-contacts {
-  font-style: normal;
+.location-modal__list {
+  @include tablet {
+    display: inline-block;
+  }
 }
 
 .location-modal__item-los-angeles {
@@ -175,4 +187,9 @@
   position: absolute;
   top: 279px;
   left: 4px;
+
+  @include tablet {
+    width: 443px;
+    left: 28px;
+  }
 }
