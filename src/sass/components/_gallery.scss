@@ -1,12 +1,14 @@
 
 .gallery {
-    padding-top: 40px;
-    padding-bottom: 40px;
+padding: 40px 0px;
 
     background-image: linear-gradient($bg-secondary-color 44%,
             $bg-primary-color 40%);
-            
+@media screen and(min-width: 1280px) {
+padding: 60px 0px;
+    }
 }
+
 .photo-list{
 margin: 0;
 
@@ -20,7 +22,7 @@ margin: 0;
     @media screen and(min-width: 768px) {
        height:264px;
         }
- @media screen and(min-width: 1200px) {
+ @media screen and(min-width: 1280px) {
                 height: 430px;
 }}
 
@@ -32,7 +34,7 @@ margin: 0;
         margin-bottom: 4px;
     }
 }
-@media screen and(min-width: 1200px) {
+@media screen and(min-width: 1280px) {
     &:not(:last-child) {
             margin-bottom: 7px;
     }}}
@@ -44,7 +46,7 @@ margin: 0;
         &:not(:last-child) {
             margin-right: 4px;
             }}
-@media screen and(min-width: 1200px) {
+@media screen and(min-width: 1280px) {
         &:not(:last-child) {
             margin-right: 7px;
                     }}}
@@ -54,7 +56,7 @@ margin: 0;
     @media screen and(min-width: 768px) {
         padding-top: 86px;
         }
-     @media screen and(min-width: 1200px) {
+     @media screen and(min-width: 1280px) {
             padding-top: 142px;
                  }}
 .height-list{
@@ -62,7 +64,7 @@ margin: 0;
     @media screen and(min-width: 768px) {
             padding-top: 54px;
         }
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
            padding-top: 86px;
                   }
 }
@@ -71,7 +73,7 @@ margin: 0;
     @media screen and(min-width: 768px) {
             padding-top: 45px;
         }
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         padding-top:98px;
                   }
 }
@@ -80,7 +82,7 @@ margin: 0;
     @media screen and(min-width: 768px) {
             padding-top: 33px;
         }
-        @media screen and(min-width: 1200px) {
+        @media screen and(min-width: 1280px) {
             padding-top: 50px;
         }
 }
@@ -89,7 +91,7 @@ padding-top: 43px;
 @media screen and(min-width: 768px) {
         padding-top: 95px;
     }
- @media screen and(min-width: 1200px) {
+ @media screen and(min-width: 1280px) {
           padding-top: 152px;
                  }
 }

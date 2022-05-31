@@ -1,24 +1,27 @@
+// .container {
+//     min-width: 320px;
+//     max-width: 1170px;
+//     padding: 8px 20px 0 20px;
 
-.container {
-    min-width: 320px;
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+//     margin-left: auto;
+//     margin-right: auto;
 
-    @include tablet {
-        padding-top: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
+//     @include tablet {
+//         padding: 32px 32px 0 32px;
+//     }
 
-.icon-burger {
-    color: $third-text-color;
-}
+//     @include desktop {
+//         padding: 40px 16px 0 16px;
+//     }
+// }
 
-.page-header {
+.page-header .container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
     background-color: $hero-primary-color;
 }
 
@@ -33,17 +36,20 @@
     margin-right: auto;
 }
 
-.menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.icon-burger {
+    fill: rgba(212, 20, 67, 1);
 }
 
-@media (max-width: 767px) {
-    .menu {
-        display: none;
+.menu {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
+
 }
 
 .menu .link {
@@ -75,7 +81,7 @@
 .menu .link:hover,
 .menu .link:focus {
 
-    text-decoration: underline;
+    color: $third-text-color;
 }
 
 
@@ -96,6 +102,10 @@
     border-radius: 50%;
     outline: none;
 
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 
     @include desktop {
         display: none;
@@ -103,20 +113,16 @@
 
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-}
 
 .menu-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 101vw;
     height: 100vh;
     padding: 20px;
     background-color: $bg-modal-color;
-    z-index: 99;
+    z-index: 250;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -133,9 +139,13 @@
     color: #fff;
 }
 
+.button-header .button-mobile-menu-text {
+    padding-right: 12px;
+}
+
 .button-header {
     display: none;
-   
+
 
     @include tablet {
         font-weight: 700;
@@ -156,15 +166,17 @@
         display: flex;
         justify-content: center;
         border-radius: 22px;
-        padding: 15px  15px ;
+        padding: 15px 15px;
 
         &:hover,
         &:focus {
-                background-color: $btn-light-hover-color;
-            }
+            background-color: $btn-light-hover-color;
+        }
 
-        
+
     }
+
+
 
 
 }

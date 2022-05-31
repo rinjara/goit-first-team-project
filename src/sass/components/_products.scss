@@ -4,55 +4,103 @@
     width: 100vw;
     overflow: hidden;
 
-    &__container{
-        @media screen and (min-width: 480px) {
-            width: 480px;
-            width: 100%;
-            overflow: hidden;
+    @include tablet {
+            padding-top: 40px;
+            padding-bottom: 60px;
         }
-    }
+    
+        @include desktop {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
 
+    
     &__label{
         margin-bottom: 15px;
 
         font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.16;
+        @include font(18px);
+        
         text-align: center;
         text-transform: uppercase;
 
         color: $fourth-text-color;
 
+        @include tablet {
+            @include font(26px, 400, 1.15);
+           
+        }
+
+        @include desktop {
+            @include font(30px, 400, 1.13);
+            
+        }
     }
+    
 
     &__title{
         margin-bottom: 30px;
 
         font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 34px;
-        line-height: 1.15;
+        @include font(34px, 400, 1.15);
+        
         text-align: center;
-        //letter-spacing: 0.04em;
         text-transform: uppercase;
     
         color: $third-text-color;
+
+        @include tablet {
+            margin-bottom: 15px;
+            @include font(48px);
+            
+                
+        }
+
+        @include desktop {
+            margin-bottom: 10px;
+            @include font(58px, 400, 1.13);
+            
+        }
     }
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 -20px -25px;
+        
+       margin-bottom: -15px;
+       overflow: hidden;
+
+       @include tablet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -16px;
+       }
+
+       @include desktop{
+            margin: -16px;
+       }
     }
 
     &__item{
         max-width: 280px;
-        margin-bottom: 25px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+       
+        overflow: hidden;
+                    
+
+        @include tablet{
+            max-width: 224px;
+            flex-basis: calc(100% / 3 - 16px);
+            margin-right: 16px;
+            overflow: hidden;
+        }
+
+        @include desktop {
+            max-width: 380px;
+            flex-basis: calc(100% / 3 - 32px);
+            margin: 16px;
+            overflow: hidden;
+        }
 
         
     }
@@ -64,26 +112,42 @@
     position: relative;
     //height: 280px;
     margin-top: 113px;
+
+    @include desktop{
+        margin-top: 200px;
+    }
     
 
     &::before{
         position: absolute;
         top: 0;
         left: 50%;
+
         content: "";
         display: block;
         width: 100%;
         height: 280px;
+
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 250px 250px;
-            
-        
-        
+             
         transform: translate(-50%, -50%);
-           
+        transition: transform $transition;
+        
+        @include tablet{
+            height:224px;
+            background-size: contain;
+        }
+
+        @include desktop{
+            height: 394px;
+            top: -35px;
+            background-size: 365px 360px;
+        }
     }
 
+    
     &--ice-cream::before{
         background-image: url(/src/images/ice-cream_products/home-pic2-mob1x.png);
         
@@ -99,6 +163,42 @@
             (min-resolution: 288dpi),
             (min-resolution: 3dppx) {
                 background-image: url(/src/images/ice-cream_products/home-pic2-mob3x.png);
+            }
+
+            @include tablet{
+                background-image: url(/src/images/ice-cream_products/home-pic1-tab1x.png);
+                
+                    @media screen and (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(/src/images/ice-cream_products/home-pic1-tab2x.png);
+                    }
+                
+                    @media screen and (min-device-pixel-ratio: 3),
+                    (-webkit-min-device-pixel-ratio: 3),
+                    (min-resolution: 288dpi),
+                    (min-resolution: 3dppx) {
+                        background-image: url(/src/images/ice-cream_products/home-pic1-tab3x.png);
+                    }
+            }
+
+            @include desktop {
+                background-image: url(/src/images/ice-cream_products/home-pic1-desktop1x.png);
+
+                    @media screen and (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: url(/src/images/ice-cream_products/home-pic1-desktop2x.png);
+                    }
+
+                    @media screen and (min-device-pixel-ratio: 3),
+                    (-webkit-min-device-pixel-ratio: 3),
+                    (min-resolution: 288dpi),
+                    (min-resolution: 3dppx) {
+                        background-image: url(/src/images/ice-cream_products/home-pic1-desktop3x.png);
+                    }
             }
     }
 
@@ -118,6 +218,43 @@
             (min-resolution: 3dppx) {
                 background-image: url(/src/images/ice-cream_products/home-pic3-mob3x.png);
             }
+
+                        
+            @include tablet {
+                background-image: url(/src/images/ice-cream_products/home-pic2-tab1x.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic2-tab2x.png);
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                (-webkit-min-device-pixel-ratio: 3),
+                (min-resolution: 288dpi),
+                (min-resolution: 3dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic2-tab3x.png);
+                }
+            }
+            
+            @include desktop {
+                background-image: url(/src/images/ice-cream_products/home-pic2-desktop1x.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic2-desktop2x.png);
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                (-webkit-min-device-pixel-ratio: 3),
+                (min-resolution: 288dpi),
+                (min-resolution: 3dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic2-desktop3x.png);
+                }
+            }
     }
 
         &--milkshakes::before {
@@ -136,14 +273,60 @@
             (min-resolution: 3dppx) {
                 background-image: url(/src/images/ice-cream_products/home-pic1-mob3x.png);
             }
+
+            @include tablet {
+                background-image: url(/src/images/ice-cream_products/home-pic3-tab-1x.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic3-tab2x.png);
+                }
+                
+                @media screen and (min-device-pixel-ratio: 3),
+                (-webkit-min-device-pixel-ratio: 3),
+                (min-resolution: 288dpi),
+                (min-resolution: 3dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic3-tab3x.png);
+                }
+            }
+            
+            @include desktop {
+                background-image: url(/src/images/ice-cream_products/home-pic3-desktop1x.png);
+
+                @media screen and (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic3-desktop2x.png);
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                (-webkit-min-device-pixel-ratio: 3),
+                (min-resolution: 288dpi),
+                (min-resolution: 3dppx) {
+                    background-image: url(/src/images/ice-cream_products/home-pic3-desktop3x.png);
+                }
+            }
         }
 
 
     &__wraper{
-        //background-color: $background-primary-color;
+        max-height: 489px;
+        padding: 155px 40px 40px;
         text-align: center;
         border-radius: 24px;
-        max-height: 489px;
+
+        @include tablet{
+            max-height: 473px;
+            padding: 150px 30px 30px;
+        }
+
+        @include desktop {
+            max-height: 535px;
+            padding: 165px 68px 40px;
+        }
       
     }
 
@@ -164,47 +347,80 @@
 
     &__title{
         position:relative;
-
         margin-bottom: 70px;
-        padding-top: 161px;
-
+        
         font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.15;
+        @include font(20px, 400, 1.15);
+        
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
     
         color: $secondary-text-color;
+
+    @include desktop {
+            @include font(30px, 400, 1.13);
+            
+        }
     }
 
     &__title::after{
         content: "";
-            display: inline-block;
-            position: absolute;
-            width: 26px;
-            height: 6px;
-            background-image: url(/src/images/Group_of_points.svg);
-            background-size: 26px 6px;
-            bottom: -30px;
-            left: 45%;
+        display: inline-block;
+        position: absolute;
+        width: 26px;
+        height: 6px;
+        background-image: url(/src/images/Group_of_points.svg);
+        background-size: 26px 6px;
+        bottom: -40px;
+        left: 40%;
+
+        @include tablet {
+            left: 40%;
+        }
+
+        @include desktop{
+            left: 43%;
+        }
     }
 
     &__text{
-       // overflow: hidden;
-        margin-bottom: 32px;
-            padding: 0 39px 0 41px;
-            max-width: 100%;
-           // height: 124px;
+        margin-bottom: 35px;
+        max-width: 100%;
+        
         font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
+        @include font(14px, 700, 1.5);
+        
         text-align: center;
         letter-spacing: 0.04em;
     
         color: $secondary-text-color;
+
+        @include tablet{
+            max-height: 150px;
+            margin-bottom: 32px;
+            line-height: 1.78;
+
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+
+           
+            
+        }
+
+        @include desktop {
+            max-height: 106px;
+           
+            @include font(16px, 700, 1.75);
+            
+            
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
     }
 
         
@@ -213,7 +429,7 @@
 .products-btn{
    // position: relative;
     display: inline-block;
-    margin-bottom: 40px;
+    //margin-bottom: 35px;
     width: 40px;
     height: 40px;
     border-radius: 50%;

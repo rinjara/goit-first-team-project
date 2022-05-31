@@ -8,9 +8,11 @@
     height: 100%;
 
     overflow-y: scroll;
-    //background-color: rgba(255, 165, 0, 0.5);
+    z-index: 999;
+    
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity $transition;
+    
+    transition: opacity .35s cubic-bezier(.4, 0, .2, 1);
 
     @media screen and (max-width: 767px) {
         padding: 93px 15px 94px 15px;
@@ -29,50 +31,87 @@
 
 .pr-modal {
     position: absolute;
-    width: 90%;
+    width: 80%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow: auto;
-    max-height: 95vh;
+    overflow: hidden;
+    
+    //height:100%;
 
     padding: 25px;
-    background-color:white;
+    background-color: $bg-primary-color;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
 
-    @media screen and(min-width:480px) {
-        width: 90%;
+    @include mobile {
+        max-width: 350px;
+        max-height: 450px;
+        width: 100%;
+        height: 100%;
+        //padding-top: 65px;
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    @media screen and(min-width:768px) {
-        width: 80%;
+    @include tablet{
+        max-width: 440px;
+        width: 100%;
+        padding-bottom: 50px;
+        //padding-top: 90px;
     }
 
-    @media screen and(min-width:1200px) {
-        width: 50%;
+    @include desktop {
+        
+        max-height: 550px;
+        width: 100%;
+        height: 100%;
+        //padding-top: 80px;
+        
+    }
+
+    &.pr-modal--ice-cream{
+        background-color: $primary-elements-bg-color;
+    }
+
+    &.pr-modal--ice-coffee {
+        background-color: $secondary-elements-bg-color;
+    }
+
+    &.pr-modal--milkshakes {
+        background-color: $third-elements-bg-color;
     }
 }
 
 .pr-modal__title {
     position: relative;
-    color: orange;
-    font-size: 26px;
-    padding-bottom: 160px;
+    padding-bottom: 180px;
     margin-bottom: 0;
     text-align: center;
 
-    @media screen and(min-width:480px) {
-        padding-bottom: 200px;
+    font-family: 'Titan One';
+    @include font(26px, 400, 1.15);
+    
+    
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+
+    @include mobile {
+        padding-bottom: 210px;
     }
 
-    @media screen and(min-width:768px) {
-        font-size: 36px;
-        padding-bottom: 230px;
+    @include tablet{
+        font-size: 32px;
+        padding-bottom: 270px;
+    }
+
+    @include desktop {
+        
+        padding-bottom: 280px;
     }
 }
 
@@ -86,7 +125,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
-    background-image: url('/src/images/ice-cream_products/home-pic1-mob1x.png');
+    background-image: url('/src/images/ice-cream_products/home-pic2-mob1x.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,20 +134,34 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url('/src/images/ice-cream_products/home-pic1-mob2x.png');
+        background-image: url('/src/images/ice-cream_products/home-pic2-mob2x.png');
     }
 
-    @media screen and(min-width:480px) {
-        background-image: url('/src/images/ice-cream_products/home-pic1-mob1x.png');
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url(/src/images/ice-cream_products/home-pic2-mob3x.png);
+        }
+
+        @include mobile {
+        background-image: url('/src/images/ice-cream_products/home-pic2-mob1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url('/src/images/ice-cream_products/home-pic1-mob2x.png');
+            background-image: url('/src/images/ice-cream_products/home-pic2-mob2x.png');
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('/src/images/ice-cream_products/home-pic2-mob3x.png');
         }
     }
 
-    @media screen and(min-width:768px) {
+        @include tablet{
         width: 220px;
         height: 226px;
         transform: translate(-50%, -50%);
@@ -119,9 +172,18 @@
         screen and (min-resolution: 2dppx) {
             background-image: url('/src/images/ice-cream_products/home-pic1-tab2x.png');
         }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('/src/images/ice-cream_products/home-pic1-tab3x.png');
+        }
+
+        
     }
 
-    @media screen and(min-width:1200px) {
+        @include desktop {
         width: 220px;
         height: 220px;
         background-image: url('/src/images/ice-cream_products/home-pic1-desktop1x.png');
@@ -131,10 +193,17 @@
         screen and (min-resolution: 2dppx) {
             background-image: url('/src/images/ice-cream_products/home-pic1-desktop2x.png');
         }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        (-webkit-min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+            background-image: url('/src/images/ice-cream_products/home-pic1-tab3x.png');
+        }
     }
 }
 
-.pr-modal--ice-coffee .pr-modal__title::after {
+.pr-modal--milkshakes .pr-modal__title::after {
     content: '';
     width: 150px;
     height: 150px;
@@ -156,17 +225,17 @@
         background-image: url('/src/images/ice-cream_products/home-pic1-mob2x.png');
     }
 
-    @media screen and(min-width:480px) {
-        background-image: url('/src/images/ice-cream_products/home-pic3-tab-1x.png');
+    @include mobile {
+        background-image: url('/src/images/ice-cream_products/home-pic1-mob1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url('/src/images/ice-cream_products/home-pic3-tab2x.png');
+            background-image: url('/src/images/ice-cream_products/home-pic1-mob2x.png');
         }
     }
 
-    @media screen and(min-width:768px) {
+        @include tablet {
         width: 220px;
         height: 226px;
         transform: translate(-50%, -50%);
@@ -179,7 +248,7 @@
         }
     }
 
-    @media screen and(min-width:1200px) {
+        @include desktop{
         width: 220px;
         height: 220px;
         transform: translate(-50%, -50%);
@@ -193,7 +262,7 @@
     }
 }
 
-.pr-modal--milkshakes .pr-modal__title::after {
+.pr-modal--ice-coffee .pr-modal__title::after {
     content: '';
     width: 150px;
     height: 150px;
@@ -215,7 +284,7 @@
         background-image: url('/src/images/ice-cream_products/home-pic3-mob2x.png');
     }
 
-    @media screen and(min-width:480px) {
+        @include mobile {
         background-image: url('/src/images/ice-cream_products/home-pic3-mob1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -225,7 +294,7 @@
         }
     }
 
-    @media screen and(min-width:768px) {
+        @include tablet {
         width: 220px;
         height: 226px;
         transform: translate(-50%, -45%);
@@ -238,7 +307,7 @@
         }
     }
 
-    @media screen and(min-width:1200px) {
+        @include desktop{
         width: 220px;
         height: 220px;
         transform: translate(-50%, -45%);
@@ -253,9 +322,10 @@
 }
 
 .pr-modal__btn {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-left: auto;
     margin-bottom: 5px;
 
@@ -263,58 +333,52 @@
     height: 30px;
     padding: 1px 6px;
     border-color: transparent;
-    border-width: 2px;
     border-radius: 50%;
-    background-color: black;
+    
+   background-color: $social-icon-color;
     transition: background-color $transition;
+    
 
     &:hover,
     &:focus {
-        background-color: tomato;
+        background-color: $social-icon-hover-color;
+       // transition-delay: 250ms;
     }
 }
 
 .pr-modal__btn-icon {
-    fill: navy;
+    
+    fill: $social-icon-hover-color;
     transition: fill $transition;
 
-    .pr-modal_btn:hover &,
-    .pr-modal_btn:focus & {
-        fill: white;
+    .pr-modal__btn:hover &,
+    .pr-modal__btn:focus & {
+        fill: $social-icon-color;
     }
 }
 
 .pr-modal__text {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
+    
+    @include font(14px, 700, 1.5);
+    
     text-align: center;
     letter-spacing: 0.04em;
-    color: black;
+    color: $secondary-text-color;
 
-    @media screen and(min-width:480px) {
-        margin-bottom: 50px;
-        font-size: 16px;
+    @include mobile {
+        
+        font-size: 14px;
     }
 
-    @media screen and(min-width:768px) {
+        @include tablet {
         line-height: 1.79;
-        margin-bottom: 20px;
+        
     }
 
-    @media screen and(min-width:1200px) {
-        font-size: 18px;
+        @include desktop {
+        font-size: 16px;
         line-height: 1.75;
-        margin-bottom: 10px;
+        
     }
 }
 
-// .pr-modal__link {
-//     width: 80px;
-//     height: 40px;
-//     margin: 0 auto;
-//     padding: 10px;
-//     border-radius: 20px;
-//     font-size: 16px;
-// }

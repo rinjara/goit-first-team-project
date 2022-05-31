@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <!-- META Tags -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Styles & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +44,8 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- Scripts Preload -->
     <script type="module" src="./index.js"></script>
   </head>
 
@@ -24,22 +54,25 @@
     <!-- Header -->
     <include src="./partials/header.html"></include>
     <include src="./partials/menu.html"></include>
-    <include src="./partials/buy-now-modal.html"></include>
     <!-- Hero -->
     <include src="./partials/hero.html"></include>
     <!-- Sections -->
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
-    <include src="./partials/read-more-modal.html"></include>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/gallery.html"></include>
     <include src="./partials/customer-reviewes.html"></include>
     <!-- Contacts & Modal -->
     <include src="./partials/contacts.html"></include>
-    <include src="./partials/franchise-modal.html"></include>
 
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
+
+    <!-- Modals -->
+    <include src="./partials/buy-now-modal.html"></include>
+    <include src="./partials/read-more-modal.html"></include>
+    <include src="./partials/location-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
 
     <!-- Scripts -->
 
@@ -50,6 +83,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="./js/products-modal.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       type="text/javascript"
@@ -57,7 +92,7 @@
     ></script>
     <script src="./js/slick-carouse.js"></script>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/products-modal.js"></script>
+    <script src="./js/location-modal.js"></script>
+    <script src="./js/franchise-modal.js"></script>
   </body>
 </html>
