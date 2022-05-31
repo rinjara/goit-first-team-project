@@ -1,14 +1,14 @@
 .contacts {
   padding-bottom: 8px;
   background-image: linear-gradient(
-    $bg-primary-color 22%,
-    $bg-secondary-color 22%
+    $bg-primary-color 23%,
+    $bg-secondary-color 23%
   );
 
   @include tablet {
     background-image: linear-gradient(
-      $bg-primary-color 17%,
-      $bg-secondary-color 17%
+      $bg-primary-color 20%,
+      $bg-secondary-color 20%
     );
   }
 
