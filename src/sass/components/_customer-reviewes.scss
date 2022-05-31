@@ -67,6 +67,11 @@
   transform: rotate(-180deg);
 }
 .customer__img {
+  transition-duration: 2s;
+  &:hover,
+  &:focus {
+    transform: scale(2.01);
+  }
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 32px;
