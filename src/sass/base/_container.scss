@@ -15,7 +15,7 @@
     padding-right: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
@@ -23,15 +23,20 @@
 }
 
 .bottom__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 
   @include tablet {
+    width: 768px;
     padding-left: 18px;
     padding-right: 18px;
   }
 
   @include desktop {
+    width: 1280px;
     padding-left: 16px;
     padding-right: 16px;
   }
