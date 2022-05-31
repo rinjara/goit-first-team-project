@@ -13,6 +13,12 @@
     font-size: 14px;
     line-height: 1.28;
 
+    &:hover,
+    &:focus {
+    
+            color: $third-text-color;
+        }
+
 }
 
 
@@ -21,24 +27,28 @@
     color: $third-text-color;
 }
 
-.button-mobile-menu-text {
-    padding-right: 20px;
+
+
+.button-mobile-menu .button-mobile-menu-text {
+    padding-right: 16px;
 }
 
 
-
 .button-mobile-menu {
-    width: 186px;
+    width: 209px;
     display: flex;
     border-radius: 22px;
     justify-content: center;
     padding: 15px 0 15px 0;
     margin-top: 58px;
     margin-bottom: 33px;
-    margin-left: auto;
+    
     margin-right: auto;
+   
 
-
+    @include tablet {
+        width: 186px;
+    }
 
     font-weight: 700;
     font-size: 16px;
