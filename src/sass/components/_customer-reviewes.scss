@@ -1,6 +1,14 @@
 .customer {
   padding-top: 0;
   margin-bottom: 0;
+  padding-bottom: 40px;
+  @include mobile {
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-bottom: 60px;
+  }
 }
 .customer__list {
   justify-content: center;
@@ -170,14 +178,6 @@
   gap: 18px;
   width: 10px;
   height: 10px;
-  padding-bottom: 40px;
-  @include mobile {
-    padding-bottom: 40px;
-  }
-
-  @include desktop {
-    padding-bottom: 60px;
-  }
 }
 
 .slick-dots li button {
