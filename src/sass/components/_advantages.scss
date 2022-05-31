@@ -1,16 +1,16 @@
 .advantage {
     background-color: $bg-secondary-color;
     padding-top: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
     @include tablet {
         padding-top: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
 
     @include desktop {
         padding-top: 0px;
-        padding-bottom: 120px;
+        padding-bottom: 60px;
     }
 }
 
