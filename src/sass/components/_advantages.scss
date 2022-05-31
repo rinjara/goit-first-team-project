@@ -1,5 +1,4 @@
 .advantage {
-    // outline: auto;
     background-color: $bg-secondary-color;
     padding-top: 0px;
     padding-bottom: 40px;
@@ -16,7 +15,6 @@
 }
 
 .advantage__list {
-    // outline: auto;
     display: flex;
     flex-direction: column;
     margin-top: 0px;
@@ -75,7 +73,6 @@
 }
 
 .advantage__figure {
-  position: relative;
   display: block;
   padding-bottom: 15px;
 
@@ -85,6 +82,7 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     color: $third-text-color;
+    
 
  animation-name: milk-figure;
  animation-duration: 5s;
@@ -102,19 +100,31 @@
     }   
 }
 
-.advantage__text--first::before {
+.advantage__text::before {
     content: "";
     position: absolute;
     display: block;
 
     bottom: calc(100% + 77px);
-    width: 33px;
     height: 50px;
-    background-image: url('../images/ice-cream_advantages/icon-milk-mob.png');
 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+   
+    @include tablet {
+        bottom: calc(100% + 105px); 
+    }
+
+    @include desktop {
+        bottom: calc(100% + 122px);
+    }
+}
+
+.advantage__text--first::before {
+    background-image: url('../images/ice-cream_advantages/icon-milk-mob.png');
+    width: 33px;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -129,7 +139,6 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-milk-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -146,7 +155,6 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-milk-desk.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -164,17 +172,8 @@
 }
 
 .advantage__text--second::before {
-    content: "";
-    position: absolute;
-    bottom: calc(100% + 77px);
-    display: block;
     width: 50px;
-    height: 50px;
     background-image: url('../images/ice-cream_advantages/icon-fruit-mob.png');
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -189,7 +188,6 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-fruit-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -206,7 +204,6 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-fruit-desk.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -224,17 +221,8 @@
 }
 
 .advantage__text--third::before {
-    content: "";
-    position: absolute;
-    bottom: calc(100% + 77px);
-    display: block;
     width: 44px;
-    height: 50px;
     background-image: url('../images/ice-cream_advantages/icon-icecream-mob.png');
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -249,7 +237,6 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-icecream-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -266,7 +253,6 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-icecream-desk.png');
 
         @media (min-device-pixel-ratio: 2),

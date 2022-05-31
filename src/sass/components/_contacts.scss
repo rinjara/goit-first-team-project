@@ -1,22 +1,26 @@
 .contacts {
+  padding-top: 8px;
   padding-bottom: 8px;
   background-image: linear-gradient(
-    $bg-primary-color 23%,
-    $bg-secondary-color 23%
+    $bg-primary-color 24%,
+    $bg-secondary-color 24%
   );
 
   @include tablet {
+    padding-top: 40px;
+    padding-bottom: 20px;
     background-image: linear-gradient(
-      $bg-primary-color 20%,
-      $bg-secondary-color 20%
+      $bg-primary-color 24%,
+      $bg-secondary-color 24%
     );
   }
 
   @include desktop {
+    padding-top: 60px;
     padding-bottom: 60px;
     background-image: linear-gradient(
-      $bg-primary-color 14%,
-      $bg-secondary-color 14%
+      $bg-primary-color 21%,
+      $bg-secondary-color 21%
     );
   }
 }
