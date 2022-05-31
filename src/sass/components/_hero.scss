@@ -2,14 +2,15 @@
   background-color: $hero-primary-color;
   position: relative;
   overflow: hidden;
-  padding-top: 136px;
+  padding-top: 128px;
   padding-bottom: 158px;
   @include tablet{
-    padding-top: 44px;
+    padding-top: 12px;
   padding-bottom: 58px;
   }
   @include desktop{
-    padding-top: 147px;
+    // padding-top: 147px;
+    padding-top: 52px;
     padding-bottom: 84px;
   }
   
@@ -267,18 +268,18 @@
   letter-spacing: 0.04em;
 
 @include tablet {
-    width: 120px;
+    width: 114px;
     margin-bottom: 5px;
   }
 }
 
 @include desktop {
   .hero__text {
-    width: 170px;
-    margin-bottom: 10px;
+    width: 200px;
+    margin-bottom: 19px;
      margin-left: 0;
 
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.4;
   }
 }
