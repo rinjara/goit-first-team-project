@@ -43,10 +43,11 @@
     padding: 60px 30px 10px 30px;
   }
 
-  //   @include desktop {
-  //     width: 528px;
-  //     min-height: 581px;
-  //   }
+  @include desktop {
+    width: 550px;
+    min-height: 670px;
+    padding: 76px 30px 10px 30px;
+  }
 }
 
 .franchise-modal__logo {
@@ -62,6 +63,10 @@
 
 .franchise-modal__img {
   max-width: 85%;
+
+  @include desktop {
+    max-width: 100%;
+  }
 }
 
 .franchise-modal__btn-close {
@@ -116,6 +121,10 @@
     color: $secondary-text-color;
     margin-bottom: 8px;
   }
+
+  @include desktop {
+    font-size: 25px;
+  }
 }
 
 .franchise-modal__text {
@@ -124,7 +133,7 @@
   @include desktop {
     display: block;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.23;
     margin-bottom: 13px;
     text-align: center;
@@ -139,10 +148,10 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 9px;
+  }
 
-    // @include tablet {
-    //   margin-bottom: 20px;
-    // }
+  @include desktop {
+    margin-bottom: 13px;
   }
 }
 
@@ -157,6 +166,10 @@
   @include tablet {
     font-size: 14px;
     margin-bottom: 2px;
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -187,6 +200,10 @@
   @include tablet {
     height: 38px;
     padding: 9px 9px 9px 42px;
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -220,6 +237,12 @@
     padding: 6px 6px;
   }
 
+  @include desktop {
+    font-size: 16px;
+    height: 68px;
+    padding: 8px 12px;
+  }
+
   &::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -233,9 +256,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  //   @include desktop {
-  //     font-size: 14px;
-  //   }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .franchise-checkbox__label {
@@ -243,13 +266,6 @@
   align-items: center;
   width: 100%;
   color: $secondary-text-color;
-
-  //   @include desktop {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     color: var(--secondary-text-color);
-  //   }
 }
 
 .franchise-checkbox__agreement {
@@ -262,10 +278,6 @@
   border-radius: 2px;
   margin-right: 7px;
   transition: background-color $transition;
-
-  //   @include desktop {
-  //     display: flex;
-  //   }
 }
 
 .franchise-checkbox__icon {
@@ -298,9 +310,9 @@
 .franchise-form__checkbox {
   margin-bottom: 9px;
 
-  //   @include mobile {
-  //     margin-bottom: 30px;
-  //   }
+  @include desktop {
+    margin-bottom: 12px;
+  }
 }
 
 .franchise-form__btn {
