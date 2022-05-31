@@ -69,6 +69,11 @@
         </symbol>
 <symbol id="icon-arrow-right2" viewBox="0 0 32 32"><path d="m19.414 27.414 10-10a2 2 0 0 0 0-2.828l-10-10a2 2 0 1 0-2.828 2.828L23.172 14H4a2 2 0 1 0 0 4h19.172l-6.586 6.586c-.39.39-.586.902-.586 1.414s.195 1.024.586 1.414a2 2 0 0 0 2.828 0z"/></symbol>
 <symbol id="icon-close_icon-1" viewBox="0 0 32 32"><path d="m27.725 24.194-8.2-8.231 8.219-8.125a.869.869 0 0 0 0-1.225l-2.337-2.35c-.163-.162-.381-.25-.613-.25s-.45.094-.613.25L16 12.363 7.806 4.269c-.162-.162-.381-.25-.612-.25s-.45.094-.612.25l-2.331 2.35a.869.869 0 0 0 0 1.225l8.219 8.125-8.194 8.225c-.162.163-.256.381-.256.613s.088.45.256.613l2.338 2.35a.861.861 0 0 0 1.224 0L16 19.57l8.169 8.194a.86.86 0 0 0 1.226 0l2.337-2.35a.864.864 0 0 0 .256-.613.895.895 0 0 0-.262-.606z"/></symbol>
+<symbol id="contacts-button-icon-dark" viewBox="0 0 26 32"><path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+<symbol id="contacts-button-icon-light" viewBox="0 0 26 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+</symbol>
+  
 </defs>
 
 </svg>

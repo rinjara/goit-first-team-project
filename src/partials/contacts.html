@@ -60,15 +60,27 @@
         </address>
       </li>
     </ul>
-
-    <a
-      href="https://www.google.com/maps/d/u/0/edit?mid=1Kc0BxM8IETiQ6e6f0cPEMhuU0CfsHKk&ll=29.37775154977391%2C-120.55745590508036&z=4"
-      target="_blank"
-      class="contacts__link-location link"
-      >Our Locations &#62;</a
-    >
-    <button type="button" class="button__franchise button" data-modal-open>
-      Franchise &#62;
-    </button>
+    <div class="contacts__buttons">
+      <button type="button" class="contacts__button-location contacts__button">
+        Our Locations
+        <svg class="contacts__button-icon-location" width="10" height="10">
+          <use
+            href="/src/images/symbol-defs.svg#contacts-button-icon-light"
+          ></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="contacts__button-franchise contacts__button"
+        data-modal-open
+      >
+        Franchise
+        <svg class="contacts__button-icon-franchise" width="10" height="10">
+          <use
+            href="/src/images/symbol-defs.svg#contacts-button-icon-dark"
+          ></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>

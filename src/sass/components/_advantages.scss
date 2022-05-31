@@ -1,21 +1,22 @@
 .advantage {
+    // outline: auto;
     background-color: $bg-secondary-color;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 40px;
 
     @include tablet {
-        padding-top: 80px;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 
     @include desktop {
-        padding-top: 120px;
+        padding-top: 0px;
         padding-bottom: 60px;
     }
 }
 
-
 .advantage__list {
+    // outline: auto;
     display: flex;
     flex-direction: column;
     margin-top: 0px;
@@ -37,7 +38,6 @@
             padding-top: 98px;
         }
 
-
         &:first-child {
             padding-top: 72px;
         }
@@ -45,10 +45,10 @@
 
     @include tablet {
         width: 184px;
-        padding-top: 97px;
+        padding-top: 90px;
 
         &:not(:last-child) {
-            margin-right: 13px;
+            margin-right: 25px;
         }
     }
 
@@ -64,7 +64,6 @@
 .advantage__text {
     display: block;
     position: relative;
-    // width: 230px;
 
     font-family: "DM Sans", sans-serif;
     font-size: 12px;
@@ -87,6 +86,11 @@
     letter-spacing: 0.04em;
     color: $third-text-color;
 
+ animation-name: milk-figure;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+
     @include tablet {
         @include font(48px, null, 1.15);
         padding-bottom: 13px;
@@ -95,7 +99,7 @@
     @include desktop {
         @include font(58px, null, 1.14);
         padding-bottom: 16px;
-    }
+    }   
 }
 
 .advantage__text--first::before {
@@ -103,7 +107,7 @@
     position: absolute;
     display: block;
 
-    bottom: calc(100% + 71px);
+    bottom: calc(100% + 77px);
     width: 33px;
     height: 50px;
     background-image: url('../images/ice-cream_advantages/icon-milk-mob.png');
@@ -125,7 +129,7 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 91px);
+        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-milk-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -142,7 +146,7 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 121px);
+        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-milk-desk.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -162,7 +166,7 @@
 .advantage__text--second::before {
     content: "";
     position: absolute;
-    bottom: calc(100% + 71px);
+    bottom: calc(100% + 77px);
     display: block;
     width: 50px;
     height: 50px;
@@ -185,7 +189,7 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 91px);
+        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-fruit-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -202,7 +206,7 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 121px);
+        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-fruit-desk.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -222,7 +226,7 @@
 .advantage__text--third::before {
     content: "";
     position: absolute;
-    bottom: calc(100% + 71px);
+    bottom: calc(100% + 77px);
     display: block;
     width: 44px;
     height: 50px;
@@ -245,7 +249,7 @@
     }
 
     @include tablet {
-        bottom: calc(100% + 91px);
+        bottom: calc(100% + 105px);
         background-image: url('../images/ice-cream_advantages/icon-icecream-tab.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -262,7 +266,7 @@
     }
 
     @include desktop {
-        bottom: calc(100% + 121px);
+        bottom: calc(100% + 122px);
         background-image: url('../images/ice-cream_advantages/icon-icecream-desk.png');
 
         @media (min-device-pixel-ratio: 2),
@@ -277,7 +281,26 @@
             background-image: url("../images/ice-cream_advantages/icon-icecream-desk@3x.png");
         }
     }
-
 }
+
+
+@keyframes milk-figure {
+    0%{
+        transform: scale(1.0);
+        left:0;
+    }
+
+    50%{
+        transform: scale(1.1);
+        left:10px;
+    }
+
+    100% {
+       transform: scale(1.0);
+       left: 0;
+    }
+}
+
+
 
 

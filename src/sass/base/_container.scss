@@ -21,3 +21,18 @@
     padding-right: 16px;
   }
 }
+
+.bottom__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  @include desktop {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
