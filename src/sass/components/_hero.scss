@@ -1,32 +1,42 @@
 .hero {
   background-color: $hero-primary-color;
   position: relative;
-  overflow-x: hidden;
+  overflow-y: hidden;
+  
 }
 
 .hero__container {
   padding-top: 193px;
   padding-bottom: 160px;
   position: relative;
-  overflow-x: visible;
-  @media screen and (min-width: 768px) {
+  overflow-x: hiden;
+  @include tablet {
     // .hero__container {
     padding-top: 102px;
-    padding-bottom: 34px;
-    overflow: hidden;
+    padding-bottom: 58px;
+    overflow: hiden;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     // .hero__container {
     padding-top: 175px;
-    padding-bottom: 55px;
+    // padding-bottom: 55px;
+    padding-bottom: 84px;
   }
 }
 
 .hero__description-wraper {
-  width: 280px;
+  width: 218px; 
   position: relative;
-  z-index: 2;
+  @include tablet{
+     width: 162px;
+     
+   }
+
+  @include desktop{
+    width: 277px;
+    // margin-top: 109px;
+  }
 }
 
 .hero__title {
@@ -44,10 +54,12 @@
 
  @include tablet {
     font-size: 22px;
+    line-height: 1.13;
   }
 }
 
-@media screen and (min-width: 1200px) {
+
+@include desktop {
   .hero__title {
     margin-bottom: 25px;
     font-size: 38px;
@@ -64,7 +76,7 @@
     line-height: 0.9;
   }
 
-  @media screen and (min-width: 1200px) {
+@include desktop {
     font-size: 58px;
   }
 }
@@ -80,7 +92,7 @@
 
 .hero__btn-link {
   display: inline-flex;
-  padding: 8px 14px;
+  padding: 8px 12px;
   background-color: #fff;
 
   font-size: 8px;
@@ -96,13 +108,13 @@
   }
 }
 
-@include tablet {
-  .hero__btn-link {
-    padding: 9px 14px;
-  }
-}
+// @include tablet {
+//   .hero__btn-link {
+//     padding: 9px 14px;
+//   }
+// }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__btn-link {
     padding: 14px 24px;
     font-size: 14px;
@@ -136,15 +148,16 @@
 
   // ___________________anime_________________
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    // top: 20px;
+    bottom: 0;
   }
 
  @include tablet {
     width: 143px;
     height: 336px;
-    right: 247px;
-    top: 65px;
+    right: 303px;
+    // top: 65px;
 
     animation-name: appearance;
     animation-duration: 3s;
@@ -159,26 +172,21 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    right: 450px;
-    top: 112px;
+    @include desktop {
+    right: 408px;
+    // 
+    bottom: 0;
     width: 236px;
     height: 557px;
   }
 
-  @media screen and (min-width: 1200px) {
-    right: 450px;
-    top: 112px;
-    width: 236px;
-    height: 557px;
-  }
 }
 
 .hero__ellipse {
   position: absolute;
-  top: 83px;
+  // top: 83px;
   right: -55px;
-
+bottom: 75px;
   width: 346px;
   height: 344px;
 
@@ -189,30 +197,33 @@
     animation-name: scale;
     animation-duration: 1.5s;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-@include tablet {
-  .hero__ellipse {
     width: 324px;
-    height: 322px;
-    top: 31px;
-    right: 137px;
+      height: 322px;
+      // top: 31px;
+      right: 185px;
+      bottom: 40px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+// @include tablet {
+//   .hero__ellipse {
+    
+//   }
+// }
+
+@include desktop {
   .hero__ellipse {
     width: 538px;
     height: 538px;
-    top: 52px;
-    left: 417px;
+    // top: 52px;
+    right: 213px;
+    bottom: 77px;
   }
 }
 
 .hero__img-left {
   position: absolute;
-  bottom: 28px;
+  bottom: 16px;
   left: 34px;
   display: block;
   
@@ -222,6 +233,9 @@
   animation-duration: 1s;
   animation-timing-function: ease-in;
    animation-iteration-count: 1;
+   @include desktop{
+     bottom: 60px;
+   }
   
 }
 .hero-left-wraper {
@@ -234,13 +248,14 @@
   border-radius: 50%;
   border: none;
   transition: all $transition;
+  background-color: #fff;
   &:hover,
   &:focus{
     background-color: $btn-light-hover-color;
   //  animation: rotate360 500ms ease;
   transform: rotate(90deg);
   }
-  @media screen and (min-width: 1200px) {
+@include desktop {
     width: 24px;
     height: 24px;
   }
@@ -263,7 +278,7 @@
 .hero__img-right {
   position: absolute;
   bottom: 0;
-  right: 34px;
+  right: 32px;
   animation-name: goup;
 
   animation-duration: 1s;
@@ -281,7 +296,7 @@
 }
 
 .hero__text {
-  margin-top: 50px;
+  // margin-top: 50px;
   margin-bottom: 7px;
   font-size: 8px;
   line-height: 1.5;
@@ -293,15 +308,15 @@
 @include tablet {
     width: 120px;
     // margin-left: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__text {
     width: 170px;
     margin-bottom: 10px;
-    margin-top: 112px;
+    // margin-top: 112px;
     margin-left: 0;
 
     font-size: 11px;
@@ -319,19 +334,31 @@
 @include tablet {
   .hero__text-wrapper {
     width: 200px;
+    margin-top: 61px;
+    // margin-bottom: 58px;
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
+    margin-left: 150px;
+  }
+}
+@include desktop {
+  .hero__text-wrapper {
+    width: 200px;
+    margin-top: 109px;
+    // margin-bottom: 58px;
+    // display: flex;
+    // flex-direction: column;
+    margin-left: 213px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__description-wrapper {
     width: 349px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__img-right {
     right: 5px;
   }
@@ -356,11 +383,12 @@
 }
 .hero__stat-list {
   position: absolute;
-  top: 96px;
-  right: 20px;
+  // top: 96px;
+  right: 32px;
+  bottom: 221px;
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop{
   .hero__stat-list {
     top: 156px;
     right: 50px;
@@ -392,7 +420,7 @@
   z-index: 0;
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__stat-list-item::before {
     width: 30px;
     height: 30px;
@@ -425,7 +453,7 @@
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   .hero__stat-list-accent-text {
     font-size: 46px;
   }
