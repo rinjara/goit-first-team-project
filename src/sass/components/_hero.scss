@@ -9,12 +9,12 @@
   padding-top: 193px;
   padding-bottom: 160px;
   position: relative;
-  overflow-x: hiden;
+  overflow-x: visible;
   @include tablet {
     // .hero__container {
     padding-top: 102px;
     padding-bottom: 58px;
-    overflow: hiden;
+    // overflow: hidden;
   }
 
   @include desktop {
