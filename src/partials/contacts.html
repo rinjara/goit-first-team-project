@@ -4,83 +4,103 @@
     <ul class="contacts__list list">
       <li class="contacts__item">
         <strong class="contacts__category">Cafe</strong>
-        <address class="contacts__address">
+        <div class="contacts__subgroup-location">
           <b class="contacts__location">Chicago</b>
           <p class="contacts__subscribe">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
+        </div>
+        <div class="contacts__subgroup-work">
           <b class="contacts__day">Monday - Friday</b>
           <p class="contacts__time extra-time">06:00 AM - 10:00 PM</p>
           <b class="contacts__day">Saturday - Sunday</b>
           <p class="contacts__time">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contacts__contact-information">
           <a href="tel:+61(0)383766284" class="contacts__tel link"
             >+61(0) 383 766 284</a
           >
           <a href="mailto:noreply@envato.com" class="contacts__email link"
             >noreply@envato.com</a
           >
-        </address>
+        </div>
       </li>
       <li class="contacts__item">
         <strong class="contacts__category foodtruck">Food truck</strong>
-        <address class="contacts__address">
+        <div class="contacts__subgroup-location">
           <b class="contacts__location">Los Angeles</b>
           <p class="contacts__subscribe">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
+        </div>
+        <div class="contacts__subgroup-work">
           <b class="contacts__day">Monday - Friday</b>
           <p class="contacts__time extra-time">06:00 AM - 10:00 PM</p>
           <b class="contacts__day">Saturday - Sunday</b>
           <p class="contacts__time">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contacts__contact-information">
           <a href="tel:+61(0)383766284" class="contacts__tel link"
             >+61(0) 383 766 284</a
           >
           <a href="mailto:noreply@envato.com" class="contacts__email link"
             >noreply@envato.com</a
           >
-        </address>
+        </div>
       </li>
       <li class="contacts__item">
         <strong class="contacts__category">Cafe</strong>
-        <address class="contacts__address">
+        <div class="contacts__subgroup-location">
           <b class="contacts__location">New York</b>
           <p class="contacts__subscribe">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
+        </div>
+        <div class="contacts__subgroup-work">
           <b class="contacts__day">Monday - Friday</b>
           <p class="contacts__time extra-time">06:00 AM - 10:00 PM</p>
           <b class="contacts__day">Saturday - Sunday</b>
           <p class="contacts__time time">08:00 AM - 16:00 PM</p>
+        </div>
+        <div class="contacts__contact-information">
           <a href="tel:+61(0)383766284" class="contacts__tel link"
             >+61(0) 383 766 284</a
           >
           <a href="mailto:noreply@envato.com" class="contacts__email link"
             >noreply@envato.com</a
           >
-        </address>
+        </div>
       </li>
     </ul>
-    <div class="contacts__buttons" location-modal-open>
-      <button type="button" class="contacts__button-location contacts__button">
-        Our Locations
-        <svg class="contacts__button-icon-location" width="10" height="10">
-          <use
-            href="/src/images/symbol-defs.svg#contacts-button-icon-light"
-          ></use>
-        </svg>
-      </button>
-      <button
-        type="button"
-        class="contacts__button-franchise contacts__button"
-        franchise-modal-open
-      >
-        Franchise
-        <svg class="contacts__button-icon-franchise" width="10" height="10">
-          <use
-            href="/src/images/symbol-defs.svg#contacts-button-icon-dark"
-          ></use>
-        </svg>
-      </button>
-    </div>
+    <ul class="contacts__buttons-list">
+      <li class="contacts__buttons-item">
+        <button
+          type="button"
+          class="contacts__button-location contacts__button"
+          location-modal-open
+        >
+          Our Locations
+          <svg class="contacts__button-icon-location" width="10" height="10">
+            <use
+              href="/src/images/symbol-defs.svg#contacts-button-icon-light"
+            ></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts__buttons-item">
+        <button
+          type="button"
+          class="contacts__button-franchise contacts__button"
+          franchise-modal-open
+        >
+          Franchise
+          <svg class="contacts__button-icon-franchise" width="10" height="10">
+            <use
+              href="/src/images/symbol-defs.svg#contacts-button-icon-dark"
+            ></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
   </div>
 </section>
