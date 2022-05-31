@@ -45,6 +45,12 @@
     padding: 61px 30px 12px 30px;
     text-align: center;
   }
+
+  @include desktop {
+    width: 600px;
+    min-height: 657px;
+    padding: 92px 30px 30px;
+  }
 }
 
 .location-modal__logo {
@@ -52,6 +58,10 @@
   position: absolute;
   top: 10px;
   left: 10px;
+
+  @include desktop {
+    top: 20px;
+    left: 34px;
 
   @include tablet {
     top: 17px;
@@ -61,6 +71,9 @@
 
 .location-modal__img {
   max-width: 57%;
+
+  @include desktop {
+    max-width: 100%;
 
   @include tablet {
     max-width: 75%;
@@ -75,6 +88,7 @@
   justify-content: center;
   align-items: center;
   background-color: $bg-modal-color;
+  color: $secondary-text-color;
   width: 25px;
   height: 25px;
   padding: 5px;
@@ -85,9 +99,14 @@
     height: 30px;
     padding: 6px;
   }
+
+  @include desktop {
+    width: 50px;
+    height: 50px;
+  }
 }
 
-.locatione-modal__icon-close {
+.location-modal__icon-close {
   fill: currentColor;
   transition: fill $transition;
 
@@ -119,6 +138,11 @@
     color: $secondary-text-color;
     margin-bottom: 8px;
   }
+
+  @include desktop {
+    margin-bottom: 17px;
+    font-size: 33px;
+  }
 }
 
 .location-modal__text {
@@ -136,6 +160,10 @@
     margin-bottom: 13px;
     text-align: center;
     color: $third-text-color;
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -156,6 +184,11 @@
   font-weight: 600;
   color: $secondary-text-color;
   margin-bottom: 3px;
+
+  @include desktop {
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
 }
 
 .location-modal__tel {
@@ -168,6 +201,10 @@
   &:hover,
   &:focus {
     color: $fifth-text-color;
+  }
+
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -189,7 +226,9 @@
   left: 4px;
 
   @include tablet {
-    width: 443px;
-    left: 28px;
+    width: 541px;
+    height: 243px;
+    top: 383px;
+    left: 29px;
   }
 }
