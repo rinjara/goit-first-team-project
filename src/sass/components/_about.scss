@@ -128,15 +128,17 @@
   color: $third-text-color;
   background-color:$btn-bg-light-color;
   cursor: pointer;
+  transition: background-color 250ms;
+  &:focus,
+  &:hover {
+  background-color: $btn-light-hover-color;
+  }
   @include tablet {
   margin-top: 32px;
   }
   @media screen and(min-width:1280px) {
   margin-top: 40px;
-  &:focus,
-  &:hover{
-  background-color: $btn-light-hover-color;
-  }
+  
   }
 }
 
