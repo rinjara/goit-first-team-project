@@ -61,18 +61,11 @@
   <script src="./js/products-modal.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- ___________________________id transition -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $("#hero-btns").on("click", "a", function (event) {
-        event.preventDefault();
-        var id = $(this).attr('href'),
-          top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1300);
-      });
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/nice-scroll.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   <script src="./js/slick-carouse.js"></script>
 
   <script src="./js/location-modal.js"></script>
