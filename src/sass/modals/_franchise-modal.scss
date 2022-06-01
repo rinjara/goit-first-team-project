@@ -307,6 +307,9 @@
   background-color: $btn-dark-hover-color;
   border: none;
 }
+.franchise-checkbox__input:hover
+  + .franchise-checkbox__label
+  .franchise-checkbox__agreement,
 .franchise-checkbox__input:focus
   + .franchise-checkbox__label
   .franchise-checkbox__agreement {
@@ -321,6 +324,12 @@
 
 .franchise-checkbox__link {
   color: $btn-dark-hover-color;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+  }
 }
 
 .franchise-form__checkbox {
