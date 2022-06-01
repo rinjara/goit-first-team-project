@@ -25,9 +25,19 @@
   </div>
 </section>
 
-<button class="button btn-totop" id="btnToTop" href="#top-hero">
+<button class="button btn-totop" id="btnToTop">
   <svg class="btn-totop__icon" width="20" height="20">
     <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
   </svg>
 </button>
 
+<script>
+  const btnToTop = document.querySelector('#btnToTop');
+  btnToTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  });
+</script>
