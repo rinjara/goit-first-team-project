@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-modal-open]'),
-    closeModalBtn: document.querySelector('[buy-modal-close]'),
-    modal: document.querySelector('[buy-modal]'),
+    openModalBtn: document.querySelector('[data-buy-modal-open]'),
+    closeModalBtn: document.querySelector('[data-buy-modal-close]'),
+    modal: document.querySelector('[data-buy-modal]'),
     body: document.querySelector('body'),
   };
 
@@ -18,9 +18,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-mobile-open]'),
-    closeModalBtn: document.querySelector('[buy-mobile-close]'),
-    modal: document.querySelector('[buy-modal]'),
+    openModalBtn: document.querySelector('[data-buy-mobile-open]'),
+    closeModalBtn: document.querySelector('[data-buy-mobile-close]'),
+    modal: document.querySelector('[data-buy-modal]'),
     body: document.querySelector('body'),
   };
 
