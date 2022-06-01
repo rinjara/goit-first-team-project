@@ -2,15 +2,15 @@
   background-color: $hero-primary-color;
   position: relative;
   overflow: hidden;
-  padding-top: 128px;
+  padding-top: 194px;
   padding-bottom: 158px;
   @include tablet{
-    padding-top: 12px;
+    padding-top: 102px;
   padding-bottom: 58px;
   }
   @include desktop{
     // padding-top: 147px;
-    padding-top: 52px;
+    padding-top: 147px;
     padding-bottom: 84px;
   }
   
@@ -129,7 +129,7 @@
   position: absolute;
   bottom: -158px;
   right: 32px;
-  
+  // z-index: 1000;
   animation-name: appearance;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -168,6 +168,7 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
+  // z-index: 999;
   background-color: $hero-secondary-color;
 
 @include tablet {
@@ -243,6 +244,7 @@
   bottom: -58px;
   right: 32px;
   animation-name: goup;
+  // z-index: 1002;
 
   animation-duration: 1s;
   animation-timing-function: ease-in;
