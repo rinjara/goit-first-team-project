@@ -1,75 +1,129 @@
-<section class="hero">
-    <div class="container hero__container">
-        <div class="hero__ellipse"></div>
-        <!-- --------------------------------------------зробити через picture -->
-        <picture>
-            <source
-                srcset="images\ice-cream_hero\ice-hero-desktop1x.png 1x, images\ice-cream_hero\ice-hero-desktop2x.png 2x, images\ice-cream_hero\ice-hero-desktop3x.png 3x"
-                media="(min-width: 1280px)" type="image/png" />
-            <source
-                srcset="images\ice-cream_hero\ice-hero-tab1x.png 1x, images\ice-cream_hero\ice-hero-tab2x.png 2x, images\ice-cream_hero\ice-hero-tab3x.png 3x"
-                media="(min-width: 768px)" type="image/png" />
-            <source
-                srcset="images\ice-cream_hero\ice-hero-mob1x.png 1x, images\ice-cream_hero\ice-hero-mob2x.png 2x, images\ice-cream_hero\ice-hero-mob3x.png 3x"
-                media="(min-width: 320px)" type="image/png" />
-            <img class="hero__img-center" src="images\ice-cream_hero\ice-hero-mob1x.png" alt="Delicious icecream" />
-        </picture>
+<section id="top-hero" class="hero">
+  <div class="container hero__container">
+    <div class="hero__ellipse"></div>
+    <!-- --------------------------------------------зробити через picture -->
+    <picture>
+      <source
+        srcset="
+          images\ice-cream_hero\ice-hero-desktop1x.png 1x,
+          images\ice-cream_hero\ice-hero-desktop2x.png 2x,
+          images\ice-cream_hero\ice-hero-desktop3x.png 3x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images\ice-cream_hero\ice-hero-tab1x.png 1x,
+          images\ice-cream_hero\ice-hero-tab2x.png 2x,
+          images\ice-cream_hero\ice-hero-tab3x.png 3x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images\ice-cream_hero\ice-hero-mob1x.png 1x,
+          images\ice-cream_hero\ice-hero-mob2x.png 2x,
+          images\ice-cream_hero\ice-hero-mob3x.png 3x
+        "
+        media="(min-width: 320px)"
+        type="image/png"
+      />
+      <img
+        class="hero__img-center"
+        src="images\ice-cream_hero\ice-hero-mob1x.png"
+        alt="Delicious icecream"
+      />
+    </picture>
 
+    <picture>
+      <source
+        srcset="
+          images\ice-cream_hero\milk-hero-desktop1x.png 1x,
+          images\ice-cream_hero\milk-hero-desktop2x.png 2x,
+          images\ice-cream_hero\milk-hero-desktop3x.png 3x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images\ice-cream_hero\milk-hero-tab1x.png 1x,
+          images\ice-cream_hero\milk-hero-tab2x.png 2x,
+          images\ice-cream_hero\milk-hero-tab3x.png 3x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        class="hero__img-left"
+        src="images\ice-cream_hero\milk-hero-desktop1x.png"
+        alt="Decanter with milk"
+      />
+    </picture>
 
-        <picture>
-            <source
-                srcset="images\ice-cream_hero\milk-hero-desktop1x.png 1x, images\ice-cream_hero\milk-hero-desktop2x.png 2x, images\ice-cream_hero\milk-hero-desktop3x.png 3x"
-                media="(min-width: 1280px)" type="image/png" />
-            <source
-                srcset="images\ice-cream_hero\milk-hero-tab1x.png 1x, images\ice-cream_hero\milk-hero-tab2x.png 2x, images\ice-cream_hero\milk-hero-tab3x.png 3x"
-                media="(min-width: 768px)" type="image/png" />
-            <img class="hero__img-left" src="images\ice-cream_hero\milk-hero-desktop1x.png" alt="Decanter with milk" />
-        </picture>
+    <picture>
+      <source
+        srcset="
+          images\ice-cream_hero\girl-hero-desktop1x.png 1x,
+          images\ice-cream_hero\girl-hero-desktop2x.png 2x,
+          images\ice-cream_hero\girl-hero-desktop3x.png 3x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          images\ice-cream_hero\girl-hero-tab1x.png 1x,
+          images\ice-cream_hero\girl-hero-tab2x.png 2x,
+          images\ice-cream_hero\girl-hero-tab3x.png 3x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        class="hero__img-right"
+        src="images\ice-cream_hero\girl-hero-desktop1x.png"
+        alt="Girl eating icecream"
+      />
+    </picture>
 
-        <picture>
-            <source srcset="images\ice-cream_hero\girl-hero-desktop1x.png 1x, images\ice-cream_hero\girl-hero-desktop2x.png 2x, 
-      images\ice-cream_hero\girl-hero-desktop3x.png 3x" media="(min-width: 1280px)" type="image/png" />
-            <source
-                srcset="images\ice-cream_hero\girl-hero-tab1x.png 1x, images\ice-cream_hero\girl-hero-tab2x.png 2x, images\ice-cream_hero\girl-hero-tab3x.png 3x"
-                media="(min-width: 768px)" type="image/png" />
-            <img class="hero__img-right" src="images\ice-cream_hero\girl-hero-desktop1x.png"
-                alt="Girl eating icecream" />
-        </picture>
-
-
-
-        <div class="hero__description-wraper">
-            <h1 class="hero__title">ice cream made with <span>passion</span></h1>
-            <ul class="hero__btns">
-                <li class="hero__btn-item">
-                    <a href="#products-section" class="hero__btn-link hero__btn-link_accent link">Products</a>
-
-                </li>
-                <li class="hero__btn-item">
-                    <a href="#about" class="hero__btn-link link">How it’s made?</a>
-                </li>
-            </ul>
-            <div class="hero__text-wrapper">
-                <p class="hero__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et
-                </p>
-                <button type="button" class="hero__btn btn-pointer">
-                    <svg class="hero__btn-icon" width="10px" height="10px">
-                        <use href="/src/images/symbol-defs.svg#icon-arrow-right2"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul class="hero__stat-list">
-            <li class="hero__stat-list-item">
-                <p class="hero__stat-list-accent-text">16</p>
-                <p class="hero__stat-list-text">cafes</p>
-            </li>
-            <li class="hero__stat-list-item">
-                <p class="hero__stat-list-accent-text">23</p>
-                <p class="hero__stat-list-text">food trucks</p>
-            </li>
-        </ul>
+    <div class="hero__description-wraper">
+      <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+      <ul class="hero__btns" id="hero-btns">
+        <li class="hero__btn-item">
+          <a
+            href="#products-section"
+            class="hero__btn-link hero__btn-link_accent link"
+            >Products</a
+          >
+        </li>
+        <li class="hero__btn-item">
+          <a href="#how-its-made" class="hero__btn-link link">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__text-wrapper">
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button" class="hero__btn btn-pointer">
+          <svg class="hero__btn-icon" width="10px" height="10px">
+            <use href="/src/images/symbol-defs.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+    <ul class="hero__stat-list">
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">16</p>
+        <p class="hero__stat-list-text">cafes</p>
+      </li>
+      <li class="hero__stat-list-item">
+        <p class="hero__stat-list-accent-text">23</p>
+        <p class="hero__stat-list-text">food trucks</p>
+      </li>
+    </ul>
+  </div>
 </section>
