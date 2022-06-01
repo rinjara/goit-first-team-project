@@ -1,7 +1,7 @@
-<div class="buy-backdrop is-hidden" buy-modal>
+<div class="buy-backdrop is-hidden" data-buy-modal>
   <div class="buy-modal">
-    <button class="buy-btn" buy-mobile-close></button>
-    <button class="buy-modal__btn-close" buy-modal-close>
+    <button class="buy-btn" data-buy-mobile-close></button>
+    <button class="buy-modal__btn-close" data-buy-modal-close>
       <svg class="buy-modal__icon-close" width="24" height="24">
         <use href="/src/images/symbol-defs.svg#close"></use>
       </svg>
@@ -12,8 +12,12 @@
       <div class="buy-form__field">
         <label class="buy-form__title" for="name-buy">Name</label>
         <div class="buy-form__wrap">
-          <input class="buy-form__input" type="text" id="name-buy" name="name-buy" /><svg class="buy-form__icon" width="18"
-            height="18">
+          <input
+            class="buy-form__input"
+            type="text"
+            id="name-buy"
+            name="name-buy"
+          /><svg class="buy-form__icon" width="18" height="18">
             <use href="/src/images/symbol-defs.svg#form-person"></use>
           </svg>
         </div>
@@ -21,27 +25,32 @@
       <div class="buy-form__field">
         <label class="buy-form__title" for="phone-buy">Phone</label>
         <div class="buy-form__wrap">
-          <input class="buy-form__input" type="tel" id="phone-buy" name="phone-buy" /><svg class="buy-form__icon"
-            width="18" height="18">
+          <input
+            class="buy-form__input"
+            type="tel"
+            id="phone-buy"
+            name="phone-buy"
+          /><svg class="buy-form__icon" width="18" height="18">
             <use href="/src/images/symbol-defs.svg#icon-modal-tel"></use>
           </svg>
         </div>
       </div>
-      
+
       <div class="buy-form__field">
         <label class="buy-form__title" for="email-buy">Email</label>
         <div class="buy-form__wrap">
-          <input class="buy-form__input" type="email" id="email-buy" name="email-buy" /><svg class="buy-form__icon" width="18"
-            height="18">
+          <input
+            class="buy-form__input"
+            type="email"
+            id="email-buy"
+            name="email-buy"
+          /><svg class="buy-form__icon" width="18" height="18">
             <use href="/src/images/symbol-defs.svg#icon-modal-email"></use>
           </svg>
         </div>
       </div>
-
     </form>
     <button class="buy-modal__btn" type="button">Buy</button>
     <p class="buy-modal__text">Our manager will contact you.</p>
-
   </div>
 </div>
-
