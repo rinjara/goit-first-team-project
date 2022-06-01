@@ -136,7 +136,7 @@
   //   transform: translateX(100%);
   transition: left 250ms ease-in-out;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 560px) {
     width: 30vw;
   }
 }
@@ -144,7 +144,7 @@
 .menu-container.is-open {
   //   transform: translateX(0);
   left: 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 560px) {
     left: 70%;
   }
 }
