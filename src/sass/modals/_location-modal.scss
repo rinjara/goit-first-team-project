@@ -34,8 +34,9 @@
   @include mobile {
     width: 435px;
     height: 500px;
-    padding: 14px 40px;
+    padding: 52px 30px 20px 30px;
     transform: translate(-50%, -50%) scale(1) rotate(0);
+    text-align: center;
     transition: transform 500ms $transition;
   }
 
@@ -43,7 +44,6 @@
     width: 500px;
     min-height: 500px;
     padding: 61px 30px 12px 30px;
-    text-align: center;
   }
 
   @include desktop {
@@ -59,26 +59,34 @@
   top: 10px;
   left: 10px;
 
-  @include desktop {
-    top: 20px;
-    left: 34px;
+  @include mobile {
+    left: 33px;
   }
 
   @include tablet {
     top: 17px;
     left: 32px;
   }
+
+  @include desktop {
+    top: 20px;
+    left: 34px;
+  }
 }
 
 .location-modal__img {
   max-width: 57%;
 
-  @include desktop {
-    max-width: 100%;
+  @include mobile {
+    max-width: 65%;
   }
 
   @include tablet {
     max-width: 75%;
+  }
+
+  @include desktop {
+    max-width: 100%;
   }
 }
 
@@ -91,8 +99,8 @@
   align-items: center;
   background-color: $bg-modal-color;
   color: $secondary-text-color;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   border: 0px;
 
@@ -100,6 +108,11 @@
     width: 30px;
     height: 30px;
     padding: 6px;
+  }
+
+  @include tablet {
+    width: 40px;
+    height: 35px;
   }
 
   @include desktop {
@@ -111,6 +124,8 @@
 .location-modal__icon-close {
   fill: currentColor;
   transition: fill $transition;
+  width: 100%;
+  height: 100%;
 
   .location-modal__btn-close:hover &,
   .location-modal__btn-close:focus & {
@@ -134,6 +149,11 @@
   text-align: center;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  @include mobile {
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
 
   @include tablet {
     font-size: 25px;
@@ -170,7 +190,7 @@
 }
 
 .location-modal__list {
-  @include tablet {
+  @include mobile {
     display: inline-block;
   }
 }
@@ -227,7 +247,17 @@
   top: 279px;
   left: 4px;
 
+  @include mobile {
+    width: 376px;
+    left: 29px;
+  }
+
   @include tablet {
+    width: 443px;
+    left: 28px;
+  }
+
+  @include desktop {
     width: 541px;
     height: 243px;
     top: 383px;
