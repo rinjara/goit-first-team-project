@@ -287,6 +287,31 @@
     }
 }
 
+.btn-totop {
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    z-index: 20;
 
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+    background-color: $social-icon-bg-color;
+    opacity: 50%;   
 
+    transition: opacity $transition;
+   
+}
 
+.btn-totop:hover,
+.btn-totop:focus {
+    opacity: 100%;
+}
+
+.btn-totop__icon {
+   fill: $social-icon-color;
+   transition: fill $transition;
+}

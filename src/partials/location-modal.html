@@ -1,36 +1,61 @@
-<div class="location-backdrop is-hidden" location-modal>
+<div class="location-backdrop is-hidden" data-location-modal>
   <div class="location-modal">
     <a href="/src/index.html" class="location-modal__logo">
-      <img class="location-modal__img" src="/src/images/logo.svg" alt="logo" width="199" height="50"
+      <img
+        class="location-modal__img"
+        src="/src/images/logo.svg"
+        alt="logo"
+        width="199"
+        height="50"
     /></a>
-    <button class="location-modal__btn-close" location-modal-close>
-      <svg class="location-modal__icon-close" width="18" height="18">
-        <use href="/src/images/symbol-defs.svg#icon-modal-close"></use>
+    <button class="location-modal__btn-close" data-location-modal-close>
+      <svg class="location-modal__icon-close" width="24" height="24">
+        <use href="/src/images/symbol-defs.svg#icon-contacts-close"></use>
       </svg>
     </button>
     <h3 class="location-modal__title">Our location</h3>
-    <p class="location-modal__text">We want you to have a truly enjoyable and memorable experience each time you visit our cafe.</p>
-    <address class="location-modal__group-contacts">
+    <p class="location-modal__text">
+      We want you to have a truly enjoyable and memorable experience each time
+      you visit our cafe.
+    </p>
     <ul class="location-modal__list">
-        <li class="location-modal__item">
-           <b class="location-modal__address">Los Angeles, 2625 S Robertson Blvd, 90034</b> 
-       <a class="location-modal__tel link" href="tel:+61(0)383766284" class="contacts__tel link"
-            >+61(0) 383 766 284</a
-          ></li>
-        <li class="location-modal__item">
-            <b class="location-modal__address">Chicago, 2242 S Wentworth Ave, 60616</li></b>
-            <a class="location-modal__tel link" href="tel:+61(0)383766284" class="contacts__tel link"
-            >+61(0) 383 766 284</a
-          >
-      <li class="location-modal__item">
-          <b class="location-modal__address">New York, 1250 6th Ave, 10020</b> 
-       <a class="location-modal__tel link" href="tel:+61(0)383766284" class="contacts__tel link"
-            >+61(0) 383 766 284</a
-          ></li>
+      <li class="location-modal__item-los-angeles">
+        <b class="location-modal__address"
+          >Los Angeles, 2625 S Robertson Blvd, 90034</b
+        >
+        <a
+          class="location-modal__tel"
+          href="tel:+61(0)383766284"
+          class="contacts__tel"
+          >+61(0) 383 766 284</a
+        >
+      </li>
+      <li class="location-modal__item-chicago">
+        <b class="location-modal__address"
+          >Chicago, 2242 S Wentworth Ave, 60616</b
+        >
+        <a
+          class="location-modal__tel"
+          href="tel:+61(0)383766284"
+          class="contacts__tel"
+          >+61(0) 383 766 284</a
+        >
+      </li>
+      <li class="location-modal__item-new-york">
+        <b class="location-modal__address">New York, 1250 6th Ave, 10020</b>
+        <a
+          class="location-modal__tel"
+          href="tel:+61(0)383766284"
+          class="contacts__tel"
+          >+61(0) 383 766 284</a
+        >
+      </li>
     </ul>
-    </address>
-<iframe class="location-map" src="https://www.google.com/maps/d/u/0/embed?mid=1d4jF5_q0NHyuFGyERlmqlgoGhr8SI0Y&ehbc=2E312F" width="290" height="300"></iframe>
-
-    </form>
+    <iframe
+      class="location-map"
+      src="https://www.google.com/maps/d/u/0/embed?mid=1d4jF5_q0NHyuFGyERlmqlgoGhr8SI0Y&ehbc=2E312F"
+      width="290"
+      height="300"
+    ></iframe>
   </div>
 </div>

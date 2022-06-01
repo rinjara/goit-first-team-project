@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[location-modal-open]'),
-    closeModalBtn: document.querySelector('[location-modal-close]'),
-    modal: document.querySelector('[location-modal]'),
+    openModalBtn: document.querySelector('[data-location-modal-open]'),
+    closeModalBtn: document.querySelector('[data-location-modal-close]'),
+    modal: document.querySelector('[data-location-modal]'),
     body: document.querySelector('body'),
   };
 
@@ -11,6 +11,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('modal-open');
+    refs.body.classList.toggle('no-scroll');
   }
 })();

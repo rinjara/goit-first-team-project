@@ -1,4 +1,5 @@
 .location-backdrop {
+  z-index: 200;
   position: fixed;
   top: 0;
   width: 100%;
@@ -33,15 +34,22 @@
   @include mobile {
     width: 435px;
     height: 500px;
-    padding: 14px 40px;
+    padding: 52px 30px 20px 30px;
     transform: translate(-50%, -50%) scale(1) rotate(0);
+    text-align: center;
     transition: transform 500ms $transition;
   }
 
   @include tablet {
-    width: 550px;
-    min-height: 609px;
-    padding: 66px 30px 12px 30px;
+    width: 500px;
+    min-height: 500px;
+    padding: 61px 30px 12px 30px;
+  }
+
+  @include desktop {
+    width: 600px;
+    min-height: 657px;
+    padding: 92px 30px 30px;
   }
 }
 
@@ -50,10 +58,36 @@
   position: absolute;
   top: 10px;
   left: 10px;
+
+  @include mobile {
+    left: 33px;
+  }
+
+  @include tablet {
+    top: 17px;
+    left: 32px;
+  }
+
+  @include desktop {
+    top: 20px;
+    left: 34px;
+  }
 }
 
 .location-modal__img {
   max-width: 57%;
+
+  @include mobile {
+    max-width: 65%;
+  }
+
+  @include tablet {
+    max-width: 75%;
+  }
+
+  @include desktop {
+    max-width: 100%;
+  }
 }
 
 .location-modal__btn-close {
@@ -64,8 +98,9 @@
   justify-content: center;
   align-items: center;
   background-color: $bg-modal-color;
-  width: 25px;
-  height: 25px;
+  color: $secondary-text-color;
+  width: 30px;
+  height: 30px;
   padding: 5px;
   border: 0px;
 
@@ -74,11 +109,23 @@
     height: 30px;
     padding: 6px;
   }
+
+  @include tablet {
+    width: 40px;
+    height: 35px;
+  }
+
+  @include desktop {
+    width: 50px;
+    height: 50px;
+  }
 }
 
-.locatione-modal__icon-close {
+.location-modal__icon-close {
   fill: currentColor;
   transition: fill $transition;
+  width: 100%;
+  height: 100%;
 
   .location-modal__btn-close:hover &,
   .location-modal__btn-close:focus & {
@@ -103,10 +150,20 @@
   margin-bottom: 10px;
   text-transform: uppercase;
 
+  @include mobile {
+    margin-bottom: 13px;
+    font-size: 21px;
+  }
+
   @include tablet {
     font-size: 25px;
     color: $secondary-text-color;
     margin-bottom: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 17px;
+    font-size: 33px;
   }
 }
 
@@ -126,10 +183,21 @@
     text-align: center;
     color: $third-text-color;
   }
+
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
-.location-modal__group-contacts {
-  font-style: normal;
+.location-modal__list {
+  @include mobile {
+    display: inline-block;
+  }
+}
+
+.location-modal__item-los-angeles {
+  padding-bottom: 9px;
+  border-bottom: 1px solid $pseudo-element-color;
 }
 
 .location-modal__address {
@@ -138,18 +206,38 @@
   font-weight: 600;
   color: $secondary-text-color;
   margin-bottom: 3px;
+
+  @include desktop {
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
 }
 
 .location-modal__tel {
   display: block;
   font-size: 12px;
   color: $third-text-color;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $pseudo-element-color;
-  &:last-child {
-    border-bottom: none;
+  cursor: pointer;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $fifth-text-color;
   }
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.location-modal__item-chicago {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid $pseudo-element-color;
+}
+
+.location-modal__item-new-york {
+  padding-top: 9px;
 }
 
 .location-map {
@@ -158,4 +246,21 @@
   position: absolute;
   top: 279px;
   left: 4px;
+
+  @include mobile {
+    width: 376px;
+    left: 29px;
+  }
+
+  @include tablet {
+    width: 443px;
+    left: 28px;
+  }
+
+  @include desktop {
+    width: 541px;
+    height: 243px;
+    top: 383px;
+    left: 29px;
+  }
 }

@@ -1,6 +1,7 @@
 .contacts {
   padding-top: 8px;
   padding-bottom: 8px;
+  text-align: center;
   background-image: linear-gradient(
     $bg-primary-color 24%,
     $bg-secondary-color 24%
@@ -26,6 +27,12 @@
 }
 
 .contacts__list {
+  margin-bottom: 32px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+
   @include tablet {
     display: flex;
   }
@@ -40,9 +47,7 @@
 }
 
 .contacts__item {
-  margin-left: auto;
-  margin-right: auto;
-  width: 280px;
+  width: 100%;
   padding: 40px 32px;
   border: 1px solid $pseudo-element-color;
   background: $fifth-elements-bg-color;
@@ -51,9 +56,6 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
-  }
-  &:last-child {
-    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 320px) {
@@ -109,8 +111,17 @@
   background-color: $third-elements-bg-color;
 }
 
-.contacts__address {
-  font-style: normal;
+.contacts__subgroup-location {
+  border-bottom: 1px solid $pseudo-element-color;
+  padding-bottom: 24px;
+
+  @include tablet {
+    padding-bottom: 32px;
+  }
+}
+
+.foodtruck {
+  background-color: $third-elements-bg-color;
 }
 
 .contacts__location {
@@ -135,9 +146,6 @@
 }
 
 .contacts__subscribe {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid $pseudo-element-color;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -146,13 +154,21 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.64;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
   }
 
   @include desktop {
     font-size: 16px;
     line-height: 1.81;
+  }
+}
+
+.contacts__subgroup-work {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -199,19 +215,28 @@
   }
 }
 
-.contacts__tel {
-  display: block;
-  margin-top: 24px;
+.contacts__contact-information {
   padding-top: 24px;
   border-top: 1px solid $pseudo-element-color;
+
+  @include tablet {
+    padding-top: 32px;
+  }
+}
+
+.contacts__tel {
+  display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: $primary-text-color;
 
+  &:hover,
+  &:focus {
+    color: $btn-dark-hover-color;
+  }
+
   @include tablet {
-    margin-top: 32px;
-    padding-top: 32px;
     font-size: 14px;
     line-height: 1.86;
   }
@@ -229,6 +254,11 @@
   line-height: 1.5;
   color: $primary-text-color;
 
+  &:hover,
+  &:focus {
+    color: $btn-dark-hover-color;
+  }
+
   @include tablet {
     font-size: 14px;
     line-height: 1.86;
@@ -240,7 +270,7 @@
   }
 }
 
-.contacts__buttons {
+.contacts__buttons-list {
   @include tablet {
     display: flex;
     justify-content: center;
