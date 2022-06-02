@@ -1,39 +1,43 @@
 <section class="advantage" id="advantages">
+  <div class="container">
+    <h2 class="section-title visually-hidden">Advantages</h2>
 
-    <div class="container">
-        <h2 class="section-title visually-hidden">Advantages</h2>
-
-        <ul class="advantage__list">
-            <li class="advantage__item">
-                <p class="advantage__figure">721</p>
-                <p class="advantage__text advantage__text--first">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-
-            </li>
-            <li class="advantage__item">
-                <p class="advantage__figure">16kg</p>
-                <p class="advantage__text advantage__text--second">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-
-            </li>
-            <li class="advantage__item">
-                <p class="advantage__figure">84</p>
-                <p class="advantage__text advantage__text--third">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-            </li>
-        </ul>
-    </div>
-  
+    <ul class="advantage__list">
+      <li class="advantage__item">
+        <p class="advantage__figure">721</p>
+        <p class="advantage__text advantage__text--first">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantage__item">
+        <p class="advantage__figure">16kg</p>
+        <p class="advantage__text advantage__text--second">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantage__item">
+        <p class="advantage__figure">84</p>
+        <p class="advantage__text advantage__text--third">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
 
-
 <button class="button btn-totop" id="btnToTop">
-    <svg class="btn-totop__icon" width="20" height="20">
-        <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
-    </svg>
+  <svg class="btn-totop__icon" width="20" height="20">
+    <use href="./images/symbol-defs.svg#icon-arrow-up"></use>
+  </svg>
 </button>
 
 <script>
-    const btnToTop = document.querySelector("#btnToTop");
-    btnToTop.addEventListener ("click", function() {
-     window.scrollTo(0,0);
+  const btnToTop = document.querySelector('#btnToTop');
+  btnToTop.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
     });
-
+  });
 </script>

@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-modal-open]'),
-    closeModalBtn: document.querySelector('[buy-modal-close]'),
-    modal: document.querySelector('[buy-modal]'),
+    openModalBtn: document.querySelector('[data-buy-modal-open]'),
+    closeModalBtn: document.querySelector('[data-buy-modal-close]'),
+    modal: document.querySelector('[data-buy-modal]'),
     body: document.querySelector('body'),
   };
 
@@ -11,16 +11,16 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('modal-open');
+    refs.body.classList.toggle('no-scroll');
   }
 
 })();
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[buy-mobile-open]'),
-    closeModalBtn: document.querySelector('[buy-mobile-close]'),
-    modal: document.querySelector('[buy-modal]'),
+    openModalBtn: document.querySelector('[data-buy-mobile-open]'),
+    closeModalBtn: document.querySelector('[data-buy-mobile-close]'),
+    modal: document.querySelector('[data-buy-modal]'),
     body: document.querySelector('body'),
   };
 
@@ -29,7 +29,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
-    refs.body.classList.toggle('modal-open');
+    refs.body.classList.toggle('no-scroll');
   }
   
 })();
